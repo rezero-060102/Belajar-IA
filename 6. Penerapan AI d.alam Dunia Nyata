@@ -1,0 +1,37 @@
+Penerapan AI dalam Dunia Nyata
+Mari kita mulai pembelajaran ini dengan mengenal penerapan AI di dunia nyata. Menurut laporan McKinsey yang berjudul The state of AI in 2022, rata-rata penggunaan AI di industri meningkat dua kali lipat dari 20% pada tahun 2017 menjadi 50% pada tahun 2022[1]. Laporan tersebut juga menyatakan bahwa 31% industri memanfaatkan teknologi AI untuk meningkatkan kualitas produk dan layanan mereka. Hal ini menunjukkan bahwa penerapan AI sudah ada di berbagai bidang industri saat ini. Berikut merupakan contoh-contoh industri yang sudah menerapkan AI.
+
+dos-18f4840f74c1ea30cd0e64894149acce20231217181102.jpeg
+
+Seperti yang Anda lihat pada gambar di atas, penerapan AI sudah ada pada seluruh bidang pekerjaan. Namun, pada kesempatan ini, kita akan membahas dua contoh saja yang sering ditemui. Tanpa berlama-lama, mari kita uraikan beberapa contoh penerapan AI pada dunia nyata di bawah ini.
+
+
+Smart Speaker
+dos-6953214a43693d29a469c3b248ade15220231217181103.jpeg
+
+Smart Speaker merupakan perangkat inovatif yang dilandasi oleh teknologi AI sehingga memiliki kemampuan untuk melakukan tugas berdasarkan perintah verbal. Kelebihan utama smart speaker terletak pada fleksibilitasnya dalam memberikan jawaban terhadap tugas yang diberikan pengguna. Alat ini dapat merespon perintah verbal yang kita ucapkan mulai dari membuka aplikasi, menjalankan penghitung waktu, memutar musik, hingga memberikan informasi yang kita butuhkan. Contohnya, jika kita mengucapkan “berikan contoh pantun lucu”, smart speaker akan langsung memberikan pantun lucu sesuai permintaan kita. 
+
+Pertanyaannya bagaimana cara membuat perangkat memiliki kemampuan untuk memahami perintah verbal dan memberikan respons pada kita? Pada contoh kasus ini, terdapat beberapa langkah hingga smart speaker dapat merespon perintah yang kita berikan. Mari kita uraikan langkah-langkahnya bersama.
+
+Pertama, kita harus memberikan kata pemicu yang telah ditentukan oleh algoritma alat ini. Seperti contohnya pada Google kata pemicunya yaitu “Ok, Google!” Lalu, setelah perangkat mendeteksi kata pemicu, ia akan mengembalikan nilai True atau False yang nantinya akan dilanjutkan pada langkah berikutnya.
+Setelah perangkat memberikan status True, ia akan melakukan pengenalan suara untuk mendeteksi perintah yang diberikan. Misalnya, perintah yang dapat diberikan adalah “berikan contoh pantun lucu”. Setelah perintah diterima, perangkat akan melakukan pemetaan audio menjadi sebuah teks. 
+Langkah ketiga merupakan langkah paling kompleks. Pada tahap ini perangkat harus mencari tahu maksud sebenarnya dari perintah yang diberikan oleh pengguna. Hal tersebut akan diolah oleh algoritma yang telah dibangun sebelumnya hingga mendapatkan maksud dari perintah yang diberikan.
+Terakhir adalah proses eksekusi dari apa yang diminta oleh pengguna kepada smart speaker. Pada kasus ini, perintah akan dieksekusi dengan mengembalikan audio yang berisi pantun lucu. 
+Sampai di sini mungkin beberapa dari kalian terbesit pertanyaan “teknologi apa yang digunakan pada smart speaker sehingga dapat melakukan hal tersebut?” Smart speaker menggunakan Natural Language Processing sehingga memiliki kemampuan untuk menerima dan memproses sebuah perintah verbal yang diberikan pengguna. Kita akan membahas algoritma dari penerapan AI ini pada modul berikutnya ya. Oleh karena itu, tetap semangat, ya karena perjalanan ini akan terasa menyenangkan bagi kita semua.
+
+
+
+Self-driving car
+Berbicara tentang penerapan AI, hal yang paling menarik pada era ini adalah Self-driving Car, salah satu perusahaan yang memiliki teknologi tersebut ialah Tesla. Beberapa dari kalian mungkin penasaran tentang “bagaimana sih cara kerja dari teknologi self-driving car?” Untuk menjawab rasa penasaran tersebut. Simak uraiannya di bawah ini. 
+
+Mari kita awali dari proses sebuah mobil dapat memahami berbagai macam perintah, mulai dari langkah utama untuk mendapatkan input hingga dapat mengemudikan dirinya sendiri secara otomatis. Mobil ini akan menerima input dari berbagai sensor, seperti gambar yang ada di sekitarnya dan mengukur jarak dengan objek lain dari posisi sensor menggunakan sensor Light Detection and Ranging (LIDAR). Perhatikan gambar berikut untuk mengetahui detailnya.
+
+
+
+dos-700d4a6a48dc509727d0a51421950d2120231217181101.jpeg
+
+Dengan input tersebut mobil ini dapat mendeteksi mobil lain serta pejalan kaki. Pendeteksian ini dapat dilakukan dengan melakukan pemetaan sehingga dapat mengirimkan input dan memberikan informasi posisi mobil dan pejalan kaki lainnya. Setelah mengetahui lokasi dari objek lainnya, informasi tersebut akan digunakan untuk perancangan gerakan pada perangkat lunak yang dibangun sehingga dapat membuat keputusan dan menghindari tabrakan. 
+
+Apakah kalian bertanya-tanya bagaimana mobil tersebut bisa menghindari tabrakan? Jika kalian berpikir demikian, mari kita bahas hal tersebut. Setelah mobil tersebut mendapatkan input dari sensor yang ada, input tersebut akan diolah menggunakan beberapa algoritma seperti convolutional neural network, dan djikstra. Algoritma tersebut bertugas untuk mengolah data input agar dapat memberikan respons terhadap kemudi, gas, serta rem untuk memberikan perintah agar dapat berjalan dengan baik dan benar.
+
+Satu hal yang perlu kalian ketahui, kedua contoh penerapan AI tersebut hanya menceritakan garis besar penerapannya. Oleh karena itu, mari kita bahas bagaimana pengembangan AI secara lebih dalam pada materi yang akan datang yaitu AI Workflow! Sudahkah Anda siap untuk melaju ke materi selanjutnya? Mari kita melangkah!
