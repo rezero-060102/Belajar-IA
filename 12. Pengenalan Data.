@@ -1,0 +1,173 @@
+Pengenalan Data
+Hai, selamat datang di modul Data untuk AI! Pada modul sebelumnya Anda sudah mengetahui apa itu AI dan tahapan mengembangkan AI secara umum. Namun jika Anda ingat pada tahapan pengembangan AI, data memiliki peranan penting pada setiap proses pengembangannya. Oleh karena itu, pada modul ini Anda akan belajar mengenal data secara umum, kriteria data untuk AI, hingga gambaran infrastruktur data di industri agar dapat memahami pentingnya data dalam proses pengembangan AI. 
+
+Materi yang akan dibahas pada modul ini antara lain sebagai berikut.
+
+Pengertian data
+Perbedaan data, dataset, dan basis data
+Gambaran infrastruktur data di industri
+Mari kita mulai pembelajaran terkait data untuk AI agar Anda lebih dekat kepada pengembangan AI yang sesungguhnya. Semangat!
+
+
+Apa Itu Data
+Data merupakan fondasi penting dalam pengembangan AI. Kualitas dan jumlah data yang baik dapat memengaruhi hasil pengembangan AI menjadi lebih baik. Setelah mengetahui bahwa data memiliki peran penting dalam proses pengembangan AI, mari kita gali sedikit lebih dalam tentang data. Mungkin pertanyaan pertama yang terbesit di benak Anda saat ini, “Apa sih data itu?” Yuk, kita bahas satu per satu.
+
+Menurut Kamus Besar Bahasa Indonesia, data merupakan keterangan yang benar dan nyata; keterangan atau bahan nyata yang dapat dijadikan dasar kajian; informasi dalam bentuk yang dapat diproses oleh komputer, seperti representasi digital dari teks, angka, gambar grafis, atau suara.
+
+Menurut Kamus Cambridge, data adalah informasi, terutama fakta atau angka, dikumpulkan untuk diperiksa dan dipertimbangkan, serta digunakan untuk membantu pengambilan keputusan atau informasi dalam bentuk elektronik yang dapat disimpan dan digunakan oleh komputer.
+
+Terakhir, menurut ahli, yaitu Tata Sutabri, dalam buku Konsep Sistem Informasi, data adalah kenyataan untuk menggambarkan suatu kejadian serta suatu bentuk yang masih mentah dan belum dapat bercerita banyak sehingga perlu diolah lebih lanjut melalui suatu model untuk menghasilkan informasi.
+
+dos-8c0863611c86b97b2afc8b9ddf38167520231217184442.jpeg
+
+Dari ketiga pengertian di atas, dapat disimpulkan arti data, yaitu Informasi yang benar, fakta, dan nyata. Dengan kata lain, data merupakan kenyataan apa adanya (raw facts).
+
+Bagaimana menurut Anda? Apakah Anda sudah memahami tentang data? Supaya pemahaman Anda lebih lengkap, selanjutnya kita akan menelaah perbedaan data, dataset, dan basis data karena ketiga hal tersebut memiliki kaitan satu sama lain.  
+
+
+
+Data, Dataset, dan Basis Data
+Pada bagian ini, Anda akan mengidentifikasi perbedaan antara ketiga hal yaitu data, basis data, dan dataset. Lalu, mengapa kita harus mengetahui perbedaan dari ketiga materi tersebut? Pertanyaan yang bagus! 
+
+Pemahaman yang baik tentang perbedaan antara data, dataset, dan basis data memungkinkan Anda mengelola dan memanfaatkan informasi dengan lebih efisien, membuat keputusan yang lebih tepat, dan menghindari kebingungan atau kesalahan yang mungkin terjadi dalam konteks pengembangan AI. 
+
+Untuk mengetahui perbedaan dasar dari data, dataset, dan basis data, mari kita mengingat kembali dari awal, yaitu data. 
+
+Data adalah fakta, nyata, dan informasi yang tersimpan di dalamnya dapat berbentuk teks, angka, gambar, suara, dan banyak bentuk lainnya. Data dalam konteks dataset dan basis data mengacu pada kumpulan informasi yang relevan serta dikumpulkan, disimpan, dan dikelola untuk tujuan tertentu. Dengan kata lain data merupakan entri tunggal atau informasi individual. Perhatikan gambar berikut.
+
+dos-1c57ee7423a2e0031d86293acc32a20920231217184441.jpeg
+
+Setelah melihat gambar di atas, dapatkah Anda mengamati perbedaan antara data dan dataset? Yup! Dataset adalah kumpulan data yang disusun secara terstruktur. Biasanya, dataset dipresentasikan dalam bentuk tabel alias kumpulan baris dan kolom yang dapat disimpan pada beberapa format, seperti CSV, Excel, JSON, dan format lainnya. Dataset dapat digunakan untuk tujuan tertentu, seperti pembangunan machine learning, analisis statistik, dan visualisasi data. Lalu pada contoh di atas, yang mana data? Seperti yang telah dibahas sebelumnya, data merupakan entri tunggal. Pada kasus di atas, data mencakup satu baris dari dataset yang ada dan dapat disebut sebagai data pelanggan. 
+
+Selain data dan dataset, Anda juga perlu mengetahui tentang basis data karena keduanya memiliki hubungan yang erat. Mari kita mulai menyelam sedikit lebih dalam agar dapat mengetahui perbedaan di antara keduanya!
+
+Basis Data merupakan kumpulan data yang diatur dan disimpan secara terorganisir sehingga dapat diambil dan diakses dengan mudah. Selain itu, ia juga dapat menyimpan berbagai macam tipe data, termasuk teks, nomor, gambar, dan tipe data lainnya. Lalu, apa perbedaannya dengan dataset? Basis data memiliki banyak kumpulan data dan dapat digunakan untuk aplikasi yang berbeda, sedangkan dataset merupakan kumpulan dari data yang diambil dari basis data. 
+
+Agar Anda dapat lebih memahami perbedaan antara dataset dan basis data, yuk telisik bersama gambar di bawah ini.
+
+dos-3d7f22c4abf08c0c0f64990bc2d032aa20231217184441.jpeg
+
+Gambar tabung di atas merupakan representasi dari sebuah basis data dan tabel yang di dalamnya memiliki struktur basis data yang diatur dengan kolom dan baris. Namun, berdasarkan gambar di atas, apakah Anda dapat menentukan manakah yang termasuk dataset? Benar, Jika tabel yang ada dalam basis data dibungkus dengan menggunakan format tertentu dan dibuat menjadi satu buah tabel maka ia dapat disebut dataset. 
+
+Jika kalian ingat dataset merupakan kumpulan data yang disusun secara terstruktur, lalu dari manakah dataset diperoleh? Dataset bisa kita dapatkan baik dari basis data maupun dari sumber yang relevan dengan objek yang sedang dikerjakan. Berikut beberapa contoh dari pengumpulan dataset.
+
+dos-bb3cf4b0b339c696033148825e04e92020231217184442.jpeg
+
+Sampai di sini, apakah Anda sudah dapat menelaah perbedaan terkait data, dataset, dan basis data? Tenang saja, ketiganya memang memiliki keterkaitan satu sama lain jadi wajar jika kalian masih memiliki pertanyaan. Oleh karena itu, jangan sungkan untuk bertanya pada forum diskusi, ya.
+
+
+
+Tipe-Tipe Data
+Halohaa! Pada materi sebelumnya, Anda sudah menelaah perbedaan data, dataset, dan basis data. Nah, sekarang saatnya mempelajari tipe-tipe pada data. Sebenarnya, untuk apa kita mempelajari tipe data? Seperti halnya manusia yang memiliki tipenya tersendiri, pengembangan AI juga memerlukan data yang sesuai dengan “tipe”-nya agar dapat mengerjakan tugasnya dengan baik. Oleh karena itu, pada modul ini, kita akan bersama-sama mengetahui berbagai macam tipe data mulai dari data terstruktur hingga data tidak terstruktur. Yuk, berangkat!
+
+
+
+Data Terstruktur
+Data terstruktur merupakan jenis data yang memiliki format dan tata letak yang tetap atau teratur. Artinya, data ini diatur dalam suatu pola atau struktur yang konsisten sehingga mudah dibaca, diproses, dan dianalisis oleh komputer atau manusia. Jenis data terstruktur umumnya memiliki definisi yang jelas seperti kolom dalam tabel atau bidang dalam dokumen teks. Data ini memiliki 2 turunan, yaitu data kuantitatif dan data kategorikal. Mari kita bahas keduanya!
+
+
+
+Data Kuantitatif
+
+Data kuantitatif adalah jenis data yang dapat diukur atau diungkapkan dalam bentuk angka. Data ini digunakan untuk mengukur atau menggambarkan jumlah, besaran, atau atribut-atribut yang dapat diukur secara numerik. Perhatikan contoh data kuantitatif berikut.
+
+dos-d4caf7756980731cf1730a952200595120231217184442.jpeg
+
+Pada modul ini, kita akan menyelam lebih dalam karena data kuantitatif akan terbagi menjadi dua bagian, yaitu data kontinu dan diskrit. Mari kita kupas tuntas hingga ke akarnya!
+
+
+
+Data Kontinu
+
+Data kontinu dapat direpresentasikan dalam berbagai nilai numerik, seperti bilangan desimal, bulat, dan lain-lain. Beberapa contoh tipe data kontinu yang umum adalah tinggi, berat, waktu, suhu, usia, dan lain-lain. 
+
+dos-31b6f50dfcb5621614b039c1a4d5044920231217184441.jpeg
+
+Mari kita analogikan bahwa Anda memiliki sebuah toko kelontong dan ingin menentukan data kontinu pada kasus yang Anda miliki. Sebelum Anda membuka toko, ada baiknya jika mengetahui perubahan temperatur yang terjadi di toko agar Anda dapat memutuskan ingin menyalakan AC pada waktu yang tepat sehingga pengunjung merasa nyaman. Sehingga Anda akan mencatat data sebagai berikut.
+
+Waktu
+
+Suhu (Celcius)
+
+10.00
+
+24
+
+10.15
+
+24.5
+
+10.30
+
+24.75
+
+…
+
+…
+
+Dari data tersebut, Anda dapat menentukan waktu penggunaan AC yang tepat supaya pengunjung merasa nyaman. Misalnya, ketika suhu sudah lebih dari 28º C, AC harus dinyalakan.
+
+
+
+Data Diskrit
+
+Data diskrit merupakan data numerik yang hanya bisa direpresentasikan dengan bilangan bulat dan tidak dapat dibagi ke dalam unit yang lebih kecil. Perhatikan tabel berikut.
+
+Produk
+
+Stok
+
+Kopi Brazil
+
+12
+
+Susu THT
+
+15
+
+Snack Cheetos
+
+7
+
+Beras
+
+5
+
+Tabel tersebut menunjukan stok produk yang sudah mulai habis pada hari itu. Karena stok produk merupakan sebuah objek tunggal, ia tidak dapat dibagi ke dalam unit yang lebih kecil. Oleh karena itu, stok produk termasuk ke dalam data diskrit.
+
+Oke, kita sudah mengenal jenis-jenis data yang termasuk dalam data kuantitatif. Lalu, bagaimana bentuk dari data kategorikal? Perhatikan penjelasan selanjutnya di bawah ini.
+
+
+
+Data Kategorikal
+
+Data kategorikal mengacu pada bentuk informasi yang dapat disimpan dan diidentifikasi berdasarkan nama atau labelnya. Data kategorikal merupakan data yang dapat dikelompokkan dan terbagi berdasarkan karakteristik atau ciri khasnya masing-masing. Dari data kategorikal, ada dua pembagian, yaitu ordinal dan nominal. Penasaran? Yuk, kita bahas!
+
+
+
+Data Ordinal
+
+Data ordinal adalah jenis pengelompokan data yang memiliki urutan atau harus disusun secara berurutan dengan mekanisme peringkat. Perhatikan data rating yang ada pada gambar berikut.
+
+dos-230cb33f0b1a986bf21cd282fde38dfc20231217184439.jpegdos-4a66ef7123e2d0f5dc3c5fd30abcec2520231217184438.jpeg
+
+Gambar di atas menunjukkan bahwa terdapat dua kelas yang memiliki rating 4,86 dan 4,83. Dari kedua kelas tersebut, manakah menurut Anda yang lebih baik? Dari angka tersebut, pasti Anda langsung bisa mengetahui kelas mana yang memiliki rating tertinggi. Nah informasi tersebut merupakan contoh dari data ordinal bahwa jenis data ini dapat diurutkan berdasarkan peringkat.
+
+
+
+Data Nominal
+
+Berkebalikan dengan data ordinal, data nominal adalah jenis pengelompokan data yang tidak memiliki keterkaitan dengan data lainnya dan tidak memiliki arti khusus. Jadi, data ini dapat dibedakan tanpa harus mengurutkan atau dibandingkan dengan data lainnya.  Perhatikan gambar di bawah ini.
+
+dos-150ddcb561f1ceb0bf000cfc102f478820231217184441.jpeg
+
+Seperti yang tertera pada gambar di atas, Anda dapat mengetahui bahwa jenis kelamin terbagi menjadi 2, yaitu perempuan dan laki-laki. Pada dasarnya jenis kelamin tersebut tidak memiliki keterkaitan, tetapi dapat diklasifikasikan menjadi jenis kelamin. Seperti halnya pengertian dari data nominal, data ini tidak dapat dibandingkan atau diurutkan. 
+
+
+
+Data Tidak Terstruktur
+Data tidak terstruktur adalah jenis data yang tidak memiliki format atau struktur yang jelas. Data ini cenderung bervariasi bentuknya dan sulit untuk diorganisasi dalam kategori atau kolom tertentu. Data tidak terstruktur seringkali memiliki sifat lebih bebas, tidak terbatas, dan lebih kompleks dibandingkan dengan data terstruktur. Berikut merupakan contoh dari data tidak terstruktur.
+
+dos-6686a44523d83e10a9516ba6823ee9e220231217184442.jpeg
+
+Eitss, jangan risau dulu melihat bentuk data seperti itu. Kita tidak akan membahas tipe data tersebut terlalu dalam saat ini. Namun, kita akan bertemu kembali di modul selanjutnya untuk menggali lebih dalam terkait data tidak terstruktur dan cara penggunaannya. Jangan kehabisan bensin dulu, ya. Tetap semangat!
