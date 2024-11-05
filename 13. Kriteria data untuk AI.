@@ -1,0 +1,50 @@
+Kriteria data untuk AI
+Hai, selamat datang kembali! Setelah Anda mendalami data untuk AI sebelumnya, sampailah kita pada bagian yang paling penting untuk membangun sebuah sistem AI berdasarkan data yang kita miliki. Seperti pada judulnya, kali ini kita akan membahas kriteria data untuk AI. 
+
+Kenapa kita harus mempelajari ini? Karena ada salah satu pepatah yang mengatakan “garbage in, garbage out” atau GIGO yang artinya bahwa output suatu sistem komputer tidak akan lebih baik dibandingkan inputnya. Maksudnya apa sih? Jika Anda penasaran dengan kalimat tersebut, berarti Anda berada di jalur yang benar. Yuk, kita pelajari bersama-sama detail dari GIGO!
+
+
+
+Garbage in, Garbage out (GIGO)
+Pada materi sebelumnya, Anda tentu sudah membaca bahwa data sangatlah penting untuk membangun AI. Nah, sekarang mari kita usut lebih dalam mengapa data memiliki peran yang penting dalam pembangunan AI melalui GIGO! 
+
+Garbage in, garbage out yang dalam bahasa Indonesia memiliki arti sampah masuk, sampah keluar. Apakah Anda memahami arti kata “sampah” di sini? Mari kita samakan sudut pandang kita terkait kata tersebut supaya tidak terjadi salah paham. 
+
+Sampah di sini berarti data yang buruk, tidak wajar, tidak relevan, dan keliru sehingga nantinya akan menghasilkan AI yang tidak sesuai dengan harapan pengembang. 
+
+Perhatikan gambar berikut.
+
+dos-a5f8865a7fbd309eb3a27b44b75d2f2120231217190229.jpeg
+
+Dari gambar di atas kita bisa mendapatkan kesimpulan bahwa keluaran dari sistem AI yang kita bangun sangat bergantung pada data masukkan yang diterima. Jika kita memiliki data masukan yang buruk, besar kemungkinan AI yang dihasilkan tidak sesuai harapan.
+
+Sedari tadi, kita telah membahas kualitas data dengan menyebut “data yang buruk”. Namun, hingga saat ini kita belum membahas apa saja masalah yang ada pada data yang menyebabkan data memiliki kualitas yang buruk. 
+
+
+
+Masalah dalam Data
+Pada tahap ini, kita akan membahas permasalahan yang ada supaya dapat memenuhi kriteria data untuk AI. Lalu, apa saja permasalahan yang sering terjadi pada data dan bagaimana cara menanganinya? Mari kita pelajari beberapa permasalahan yang umum terjadi pada data!
+
+Sebelum kita memasuki permasalahan pada data, alangkah baiknya kita mengetahui terlebih dahulu mengapa bisa terjadi permasalahan dalam data. Permasalahan yang terjadi pada data biasanya disebabkan oleh kesalahan ketika pengumpulan atau pencatatan data. Data yang diperoleh dengan cara yang salah atau bahkan diambil dari sumber yang tidak dapat dipercaya juga bisa disebut sebagai data sampah. 
+
+Dari hal tersebut muncullah permasalahan umum pada data. Permasalahan umum yang sering terjadi terdapat pada kualitas data di antaranya, seperti data yang tidak relevan (incorrect), data berbeda dengan yang lain (outlier), data duplikat, data kosong, data yang tidak benar, dan masih banyak lagi. Pada kesempatan ini, kita akan membahas beberapa permasalahan umum yang terjadi dan bagaimana cara menanganinya. 
+
+Dari beberapa permasalahan di atas, setidaknya kita akan sering menemui data kosong. Kita dapat menanganinya dengan beberapa cara, seperti menghapus data yang kosong tersebut atau mengisi data kosong dengan nilai rata-rata atau median jika datanya berupa numerik. 
+
+Sampai di sini, Anda hanya perlu tahu bahwa data yang bermasalah dapat diperbaiki sehingga menghasilkan data yang lebih baik. Untuk menangani permasalah pada data, Anda akan mempelajarinya secara lebih detail di modul berikutnya pada data preprocessing. Tetap semangat!
+
+
+Daftar Modul
+38% Selesai
+
+Persiapan Belajar
+Berkenalan dengan Artificial Intelligence (AI)
+Data untuk AI
+1/6
+Pengantar Machine Learning
+0/9
+Deep Learning untuk Semua Orang
+0/8
+Penutup
+0/2
+K
