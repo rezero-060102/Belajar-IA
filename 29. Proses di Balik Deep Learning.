@@ -1,0 +1,121 @@
+Proses di Balik Deep Learning
+
+
+Pembelajaran yang Dilakukan Komputer
+Selamat! Anda telah berhasil mempelajari pembuatan deep learning menggunakan teachable machine hingga menghasilkan sebuah model yang dapat digunakan. Namun, tahukah Anda bagaimana proses pembelajaran itu terjadi? Seperti yang telah dibahas sebelumnya pada pengenalan artificial neural network, proses pembelajaran ini terjadi melalui 3 tahapan, yaitu input layer, hidden layer, dan output layer. 
+
+Di balik proses pembelajaran yang dilakukan oleh komputer terdapat banyak sekali perhitungan matematis yang terjadi. Mari kita bahas satu per satu mulai dari input layer, hidden layer, hingga output layer.
+
+Kita akan menggunakan studi kasus klasifikasi gambar fashion menggunakan MNIST dataset untuk mempelajari cara kerja dari setiap layer. Dataset tersebut memiliki 10 buah kelas yang terdiri dari baju, sepatu, tas, dan sebagainya.
+
+dos-5aa5f3cf8647dd9db97e85145ccb6c0e20240106160007.jpeg
+
+Jika tidak menggunakan teachable machine, kita harus menggunakan TensorFlow untuk membuat model machine learning tersebut. Kita dapat menggunakan Keras dengan kode sebagai berikut.
+
+import tensorflow as tf
+ 
+mnist = tf.keras.datasets.fashion_mnist
+(x_train, y_train),(x_test, y_test) = mnist.load_data()
+X_train, x_test = x_train / 255.0, x_test / 255.0
+model = tf.keras.models.Sequential([
+    tf.keras.layers.Flatten(input_shape=(28, 28)),
+    tf.keras.layers.Dense(512, activation=tf.nn.relu),
+    tf.keras.layers.Dense(10, activation=tf.nn.softmax)
+])
+model.compile(optimizer=tf.optimizers.Adam(),
+              loss=’sparse_categorical_crossentropy’,
+              metrics=[‘accuracy’])
+model.fit(x_train, y_train, epochs=10)
+Mari kita bahas kode di atas satu per satu. Hal yang paling pertama adalah kita perlu mempersiapkan data kemudian membaginya menjadi data latih dan data uji. Data fashion MNIST bisa kita dapatkan dengan mudah dari library datasets yang disediakan Keras.
+
+Mnist = tf.keras.datasets.fashion_mnist
+(x_train, y_train),(x_test, y_test) = mnist.load_data()
+X_train, x_test = x_train / 255.0, x_test / 255.0
+Dalam klasifikasi gambar, setiap piksel pada gambar memiliki nilai dari 0 sampai 255. Kita perlu melakukan normalisasi dengan membagi setiap pixel pada gambar dengan 255. Dengan nilai yang telah dinormalisasi, jaringan saraf dapat belajar dengan lebih baik.
+
+X_train, x_test = x_train / 255.0, x_test / 255.0
+Pada langkah berikutnya, kita mendefinisikan arsitektur dari jaringan saraf yang akan kita latih.
+
+model = tf.keras.models.Sequential([
+    tf.keras.layers.Flatten(input_shape=(28, 28)),
+    tf.keras.layers.Dense(512, activation=tf.nn.relu),
+    tf.keras.layers.Dense(10, activation=tf.nn.softmax)
+])
+Seperti yang Anda lihat pada kode di atas, ketiga layer tersebut terdiri dari input layer, hidden layer, dan output layer. Apa arti dari masing-masing layer tersebut? Mari kita bedah semuanya agar Anda dapat lebih memahami proses pembelajaran yang terjadi pada machine learning.
+
+Untuk membuat sebuah model di Keras, kita bisa memanggil fungsi tf.keras.models.Sequential([...]) dan menampungnya pada sebuah variabel. Model sequential pada Keras adalah tumpukan layer-layer yang melakukan proses perhitungan sehingga mendapatkan output yang sesuai dengan tugasnya. 
+
+Berikut definisi dari 3 layer utama pada model sequential.
+
+Input layer 
+Layer yang memiliki parameter ‘input_shape’. Input_shape sendiri adalah resolusi dari gambar-gambar pada data latih. Dalam hal ini sebuah gambar MNIST memiliki resolusi 28x28 pixel sehingga input shape-nya adalah (28, 28). Sebuah layer Flatten pada Keras akan berfungsi untuk meratakan input. Meratakan di sini artinya mengubah gambar yang merupakan matriks 2 dimensi menjadi array 1 dimensi. Pada kasus kita sebuah gambar MNIST yang merupakan matriks 28x 28 elemen akan diubah menjadi larik/array satu dimensi sebesar 784 elemen.
+Hidden layer 
+Dense layer pada Keras merupakan layer yang dapat dipakai sebagai hidden layer dan output layer pada sebuah MLP. Parameter unit merupakan jumlah perceptron pada sebuah layer. Kita dapat menggunakan fungsi aktivasi relu (rectified linear unit) atau fungsi aktivasi lain untuk hidden layer kita.
+Output layer 
+Ia didefinisikan dengan membuat sebuah Dense layer. Jumlah unit menyesuaikan dengan jumlah label pada dataset. Untuk fungsi aktivasi pada layer output, gunakan fungsi aktivasi Sigmoid ketika hanya terdapat 2 kelas/label pada dataset. Untuk dataset yang memiliki 3 kelas atau lebih, gunakan fungsi aktivasi Softmax. Fungsi aktivasi softmax akan memilih kelas mana yang memiliki probabilitas tertinggi. Untuk data fashion MNIST kita akan menggunakan fungsi aktivasi softmax karena terdapat 10 kelas.
+Agar Anda lebih memahami proses terjadinya pembelajaran machine learning, perhatikan gambar di bawah ini.
+
+dos-04483baacfc9e2d35b7989acb1542daa20240106160003.jpeg
+
+Gambar di atas menunjukkan jumlah layer yang direpresentasikan oleh neuron. Jika kalian ingat, proses pembelajaran di atas sama halnya dengan perceptron yang telah kita bahas pada modul ini. Setiap neuron yang terhubung mewakili perhitungan dari sebuah perceptron. Proses pembelajaran ini terdiri dari 5 komponen, yaitu bobot atau weights (Wi) dan bias (W0), penjumlahan atau sum (∑), fungsi aktivasi atau non linearity function (⎰), dan output (y).
+
+Fungsi matematis dari proses pembelajaran ini dapat kita lihat di bawah ini.
+
+dos-0d232dc01e0891112f295f0cc35127a320240106160002.jpeg
+
+Rumus tersebut merupakan notasi matematis yang menjelaskan proses yang kita bahas sebelumnya. Berikut merupakan keterangan dari rumus di atas:
+
+ŷ = output/keluaran
+w0 = bias
+w1 = weight/bobot 
+x1 = input
+g = fungsi aktivasi
+Sehingga dari rumus di atas dapat disimpulkan bahwa output/keluaran (ŷ) merupakan hasil perhitungan dari bias (w0) ditambah dengan total dari input (x1) dikalikan dengan bobot (w1). Kemudian, nilai akhir dari perhitungan tersebut dikalikan dengan fungsi aktivasi (g) sehingga mendapatkan sebuah nilai output/keluaran
+
+Fungsi aktivasi (g) pada perceptron bertugas untuk membuat jaringan saraf mampu menyesuaikan pola pada data non linier. Seperti yang sudah pernah dibahas sebelumnya, mayoritas data yang terdapat di dunia nyata adalah data non linier seperti di bawah ini.
+
+dos-df4e37db7a676e6931515297f94d2ba520240106160002.jpeg
+
+Tanpa fungsi aktivasi, jaringan saraf hanya bisa mengenali pola linier seperti garis pada regresi linier. Hasilnya bisa Anda lihat melalui gambar berikut.
+
+dos-af627850c6b8127c402f0d033ab67c4b20240106155956.jpeg
+
+Fungsi aktivasi (g) itulah yang memungkinkan jaringan saraf dapat mengenali pola non-linier tanpa memperhatikan kompleksitas atau sebaran data yang ada. Sehingga dengan penggunaan fungsi aktivasi (g) menghasilkan batasan sebaran data sebagai berikut.
+
+dos-5ba489f0826271c9baae9a4b2f75807120240106160002.jpeg
+
+Setelah membuat arsitektur machine learning, model kita belum bisa melakukan apa pun. Agar model bisa belajar, kita perlu memanggil fungsi compile pada model dan menspesifikasikan optimizer dan loss function. Dua hal ini memiliki peran yang sangat penting ketika kita membangun model machine learning. Loss function berfungsi untuk menghitung perbedaan antara output prediksi dengan output sesungguhnya, sedangkan optimizer berfungsi untuk menyesuaikan nilai parameter sehingga dapat meminimalisir kesalahan pada saat pembelajaran dilakukan.
+
+Salah satu optimizer yang biasa digunakan adalah Adam. Selanjutnya untuk loss function kita dapat menggunakan sparse categorical entropy pada kasus klasifikasi 3 kelas atau lebih. Untuk masalah 2 kelas, loss function yang lebih tepat adalah binary cross entropy. Parameter metrics berfungsi untuk menampilkan metrik yang dipilih pada proses pelatihan model.
+
+model.compile(optimizer=tf.optimizers.Adam()),
+              loss=’sparse_categorical_crossentropy’,
+              metrics=[‘accuracy’])
+Setelah membuat arsitektur MLP dan menentukan optimizer serta loss functionnya, kita dapat melatih model kita pada data training. Parameter epoch merupakan jumlah berapa kali sebuah model melakukan propagasi balik.
+
+model.fit(x_train, y_train, epochs=10)
+Begitulah cara kita membuat sebuah model deep learning dengan tanpa bantuan teachable machine. Tentu sangat menyenangkan, bukan? Namun, Anda tidak perlu risau melihat proses pembuatan machine learning tersebut karena sejatinya tugas tersebut akan dikelola oleh machine learning engineer. 
+
+
+
+Perangkat Keras yang Digunakan
+Anda telah mempelajari banyak hal terkait pembangunan AI hingga deep learning, tetapi tahukah Anda bagaimana model yang kita buat dapat melakukan tugasnya seperti mengklasifikasikan kelompok umur, atau memprediksi sebuah gambar? Komputer memerlukan perangkat keras untuk menjalankan model machine learning karena tugas-tugas yang dilakukan olehnya seringkali melakukan komputasi yang berat dan memerlukan operasi matematika yang intensif. 
+
+Ada beberapa perangkat keras yang dapat mendukung komputer untuk menjalankan model machine learning beberapa contohnya seperti Central Processing Unit (CPU), Graphical Processing Unit (GPU), dan Tensor Processing Unit (TPU). 
+
+dos-c87959f243c26a11bb654dca8593631e20240106160001.jpeg
+
+Mari kita bahas apa perbedaannya dan kelebihan dari masing-masing perangkat keras tersebut. Materi ini dibuat agar Anda dapat menentukan perangkat keras yang cocok untuk menjalankan model machine learning yang telah dibuat sebelumnya. 
+
+Saat kami menyebutkan beberapa contoh perangkat keras yang dapat membantu menjalankan model machine learning, mungkin Anda akan bertanya “bagaimana cara menentukan perangkat keras yang cocok untuk model yang telah dibuat?” Pertanyaan yang bagus! 
+
+Sebetulnya, jika menjalankan machine learning pada komputer lokal dan memiliki perangkat keras yang mendukung, Anda tidak perlu memikirkan hal ini karena GPU akan secara otomatis melakukan segala komputasinya. Namun, permasalahan muncul ketika Anda akan menjalankan model machine learning pada mesin yang terbatas atau ketika Anda akan menyimpan model pada sebuah layanan cloud computing. 
+
+Mengapa ketika kita menyimpan model machine learning pada layanan cloud computing harus memperhatikan perangkat keras yang digunakan? Hal ini disebabkan mayoritas layanan tersebut memiliki batasan spesifikasi sehingga mempengaruhi biaya yang kita keluarkan untuk menjalankan model machine learning.
+
+Mari kita kembali ke pertanyaan utama kita, “Bagaimana cara menentukan perangkat keras yang cocok untuk model yang telah dibuat?” Jika Anda membuat machine learning yang memerlukan pelatihan model yang sangat intensif secara komputasi seperti pelatihan jaringan saraf tiruan yang besar, GPU atau TPU bisa menjadi pilihan yang lebih baik daripada CPU. Namun, ketika Anda memiliki model machine learning yang lebih sederhana tanpa melibatkan jaringan saraf seperti klasifikasi menggunakan decision tree, k-means clustering, dan lain sebagainya, Anda dapat menggunakan CPU.
+
+Sampai di sini, bagaimana menurut Anda mengenai pembangunan machine learning ini? Proses pengembangan machine learning tidak sebatas membuat model saja karena kita harus mempelajari hingga model tersebut dapat mengerjakan tugasnya. Berita baiknya, Anda sudah mempelajari semua itu, sekaligus mengetahui perangkat keras yang dapat digunakan.
+
+
+Selamat! Anda telah mencapai akhir kelas Belajar Dasar AI dan telah mempelajari banyak hal sejauh ini mulai dari pengenalan AI, data untuk AI, pengenalan machine learning hingga membuat model deep learning. Namun, jika masih penasaran terkait machine learning secara lebih mendalam, Anda dapat mempelajari materi yang sangat menyenangkan ini pada learning path machine learning di Dicoding ya, Sampai jumpa!
