@@ -1,0 +1,18 @@
+Pengenalan Deep Learning
+Setelah perjalanan yang cukup panjang mulai dari pengenalan AI, data untuk AI hingga ke machine learning, kita telah sampai di modul terakhir kelas ini. Bagaimana perjalanan Anda, menyenangkan bukan? Pada modul sebelumnya telah dibahas materi seputar machine learning hingga proses pengembangannya. Materi tersebut merupakan salah satu bidang keilmuan AI yang mempelajari tugasnya berdasarkan pola yang ada pada data.
+
+Dalam modul “Deep Learning untuk Semua Orang” akan membahas mengenai deep learning, sebuah model yang merupakan bagian lebih dalam dari bidang keilmuan AI dan machine learning. Di modul ini juga akan dibahas mengenai artificial neural network, multi layer perceptron, dan lainnya. 
+
+Setelah mempelajari modul ini Anda akan memahami bagaimana deep learning dapat dipakai dalam bidang yang rumit untuk dikerjakan oleh model machine learning seperti computer vision atau speech recognition.
+
+Deep learning adalah bagian dari bidang keilmuan AI yang mengajarkan komputer untuk memproses data yang terinspirasi dari cara kerja otak manusia. Model deep learning dapat mengerjakan tugas yang lebih kompleks dari machine learning. Dengan kompleksitas yang cukup tinggi, model deep learning dapat mengenali gambar, teks, suara, dan data lainnya. 
+
+dos-986f18d9ab143cc40684ea21886f509a20240106153147.jpeg
+
+Anda pasti masih ingat pada modul Data untuk AI, kita mempelajari data tidak terstruktur berupa gambar, suara, dan bentuk lainnya. Nah, dengan menggunakan deep learning kita dapat membuat sebuah sistem AI yang dapat mengotomatiskan tugas-tugas yang biasanya membutuhkan kecerdasan manusia seperti mendeskripsikan gambar atau mengubah file suara ke dalam teks secara langsung seperti gambar di atas. 
+
+Lalu, mengapa deep learning ini menjadi bagian yang penting dari pengenalan AI? Seperti yang telah disinggung sebelumnya, deep learning merupakan model yang dapat melatih komputer untuk berpikir layaknya manusia sehingga dapat menggantikan tugas yang selama ini kita lakukan secara manual. 
+
+Deep learning terdiri dari 3 atau lebih lapisan atau biasa disebut layers. Ia berperan sebagai pengganti otak manusia sebagai jaringan saraf yang memungkinkan model mempelajari data yang sangat besar. 
+
+Lantas, apa itu jaringan saraf manusia yang ada pada layers tersebut? Pertanyaan tersebut akan segera terjawab karena kita akan mempelajari dan mengenali jaringan saraf atau artificial neural network yang berperan dalam pembangunan deep learning. Tetap semangat, ya!
