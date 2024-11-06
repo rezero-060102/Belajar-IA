@@ -1,0 +1,99 @@
+Gambaran Penerapan Deep Learning di Industri
+Deep learning sebagai bagian dari keilmuan machine learning sudah diimplementasikan pada berbagai bidang industri saat ini. Jika Anda ingat kembali pada materi data untuk AI disebutkan bahwa data tidak terstruktur dapat digunakan untuk membangun sebuah sistem berbasis AI. Untuk mengolahnya, kita dapat menggunakan model deep learning untuk mempelajari data tersebut sehingga dapat melakukan tugas berdasarkan data dan permasalahan yang dialami oleh developer. 
+
+Sebelum era deep learning, pendekatan yang dilakukan untuk tugas klasifikasi gambar melibatkan tim expert (ahli) yang menjelaskan bagaimana karakteristik atau fitur hewan tertentu. Misal, seekor burung memiliki sayap, bentuk paruh, dan bentuk kaki tertentu. 
+
+Kemudian, kita merancang filter pemrosesan gambar agar sesuai dengan kriteria ini. Misalnya, fitur edge detection untuk mengidentifikasi bentuk paruh burung dan mencocokkan fitur morfologi untuk melihat apakah hewan tersebut cocok dengan bentuk yang kita harapkan. Beberapa teknik pemrosesan gambar lain juga dibutuhkan dalam proses ini. Selanjutnya, berdasarkan beberapa kriteria, kita akan mendapatkan skor untuk menilai apakah gambar tersebut adalah seekor burung. 
+
+dos-3bfd2bda7ce9dac811fa7c1d5c28289b20240205133527.png
+
+Sebuah proses yang panjang, bukan? Kita juga melakukan hal yang sama saat merancang dan menerapkan serangkaian aturan berbeda untuk hewan-hewan lainnya. Bayangkan usaha yang harus dilakukan untuk dapat menyelesaikan satu tugas klasifikasi. Tentunya sangat menantang, ‘kan?
+
+Dengan mempelajari konsep deep learning ini akan mempermudah Anda untuk membangun sebuah sistem berbasis AI. Agar lebih paham terkait pengembangannya, mari kita simak contoh penerapan deep learning yang akan dibahas di bawah ini, mulai dari pengolahan citra, text, hingga audio. 
+
+
+
+Pengolahan Citra/Custom Vision
+Mari kita awali dengan sebuah cerita. Bayangkan Anda sedang duduk di tepi pantai, menikmati senja dan mengamati segala hal yang terjadi di lingkungan sekitar. Di hadapan Anda, laut membentang, ombak berkejaran, sekelompok camar terbang rendah, sesekali mematuk ikan kecil yang muncul ke permukaan. Jauh di ufuk sana, matahari perlahan tenggelam, meninggalkan rona merah keemasan. 
+
+Saat Anda berada di sana dan menyaksikan itu semua, sesungguhnya ada dua sistem dalam tubuh yang sedang bekerja, yaitu mata dan sistem kognitif dalam tubuh. Mata berfungsi sebagai sensor yang menciptakan representasi pemandangan, sedangkan sistem kognitif yang akan memahami apa yang dilihat oleh mata. 
+
+
+
+dos-cff1edaedf4e20df35c845d442aae04620240106154108.jpeg
+
+Mata manusia dapat melihat pemandangan di sekelilingnya sekaligus mampu melakukan penyesuaian secara dinamis. Saat fokus pada daerah dengan tingkat kecerahan yang bervariasi, mata bisa mengimbangi. Selain itu, mata mampu mencakup sudut pandang yang lebih luas dan fokus pada objek dengan berbagai jarak secara bergantian. Kemampuan mata kita luar biasa, bukan? 
+
+Kemudian sistem kognitif memproses semua informasi yang dilihat oleh mata dan merepresentasikan ke dalam berbagai bentuk, warna, kecerahan, detil, dan keindahan. Inilah yang disebut sebagai “vision” atau sistem penglihatan manusia. Kemampuan penglihatan manusia (human vision capabilities) ini kemudian ditiru oleh komputer atau mesin sehingga lahirlah bidang computer vision.
+
+Bagaimana caranya semua itu bisa dilakukan? Computer vision bekerja dengan membangun metode untuk pembentukan gambar (meniru sistem sensorik manusia) dan persepsi mesin (meniru sistem kognitif manusia). Sistem sensorik manusia ditiru dengan melibatkan sistem sensor, seperti kamera, pengaturan desain, dan penempatannya; sedangkan pendekatan modern untuk meniru sistem kognitif manusia terdiri dari metode machine learning yang digunakan untuk mengekstrak informasi dari gambar,
+
+
+
+dos-a944ebb46f0cb0c975ed8c7cc04b15a520240106154108.jpeg
+
+Jadi, computer vision merupakan bidang yang memungkinkan komputer atau sistem memperoleh informasi dari gambar digital, video, dan input visual lainnya. Bagi manusia dengan sistem penglihatan yang normal, tentu mudah untuk dapat langsung menginterpretasikan objek yang dilihatnya. Sayangnya, hal tersebut akan sulit dilakukan oleh mesin. Mesin membutuhkan sistem pemrosesan paralel yang mumpuni untuk memproses data dalam jumlah besar dan sistem kontrol yang kompleks untuk menyelesaikan permasalahan. Hal ini menjadikan computer vision sebagai salah satu bidang yang rumit sekaligus menantang. 
+
+Jika Anda mempelajari computer vision satu dekade ke belakang, metode yang digunakan untuk mengekstrak informasi dari objek digital tidaklah melibatkan machine learning. Pada masa itu, beberapa metode yang digunakan antara lain tentang denoising, edge detection, texture detection, dan morphological operation (shape-based). Kemajuan di bidang AI dan machine learning telah mengubah cara ini. Sebagai contoh, klasifikasi gambar sekarang bisa diselesaikan dengan pendekatan deep learning, yaitu teknik Convolutional Neural Network. 
+
+Pendekatan deep learning mengajarkan komputer untuk mengenali suatu objek dalam gambar dengan memberikan banyak data gambar beserta labelnya (solusi yang benar). Misalnya, pada permasalahan klasifikasi hewan, kita akan menunjukkan kepada komputer banyak gambar hewan seperti burung, kelinci, kucing, dan sebagainya. Dengan data pelatihan seperti itu, komputer belajar cara mengklasifikasikan gambar yang belum pernah ditemui sebelumnya. 
+
+dos-6492d4183e552ce46f0fc1d30c815e1a20240106154108.jpeg
+
+Dengan cara di atas, proses pengenalan dan klasifikasi gambar tentu jadi lebih mudah dan cepat.
+
+Anda mungkin bertanya-tanya, apa contoh penerapan computer vision di industri saat ini? Contohnya ada banyak sekali, tetapi pada modul ini kita akan membahas salah satu contoh penerapannya di bidang kesehatan.
+
+Kemajuan computer vision di bidang kesehatan memungkinkan para tenaga medis menggunakan data citra medis (medical imaging data) untuk membantu memberikan diagnosis, pengobatan, dan prediksi penyakit. Dengan computer vision, tenaga medis dapat menafsirkan citra sinar-X, CT scan, MRI, dan citra mikroskopis secara lebih akurat. Meskipun computer vision tidak akan sepenuhnya menggantikan tenaga kesehatan, ia cukup berperan dalam melengkapi diagnosis untuk pasien. 
+
+dos-b6b0e797122de9c4748228e78a98a3f320240106154111.jpeg
+
+Penerapan computer vision dalam pencitraan medis juga menghasilkan solusi untuk memprediksi dan menganalisis gejala gangguan pada gigi, neurologis dan neuropathy, memantau kehilangan darah untuk mengoptimalkan transfusi, mendeteksi COVID-19, dan lain sebagainya. COVID-Net dengan teknik deep neural network menunjukkan akurasi 90% dalam mendiagnosis COVID-19 berdasarkan gambar rontgen dada.
+
+Selain itu, sebuah perusahaan bernama Gauss Surgical memproduksi alat untuk memonitor darah secara real-time. Monitor dilengkapi dengan aplikasi sederhana dengan teknik computer vision berbasis cloud. Alat ini bertujuan untuk memprediksi banyaknya darah yang hilang selama operasi, memaksimalkan proses transfusi darah, dan mendeteksi potensi pendarahan secara lebih akurat. Teknologi ini diperkirakan dapat menghemat sekitar 10 miliar dollar setiap tahunnya.
+
+
+
+Pengolahan Text
+Bayangkan Anda terbangun di pagi hari. Dengan mata masih setengah terpejam, Anda mengaktifkan perangkat cerdas di sisi tempat tidur kemudian bertanya kepadanya.
+
+Anda: “Jam berapa sekarang?”
+
+Asisten digital: “Sekarang pukul enam pagi”
+
+Tidak seperti biasanya, pagi ini Anda merasa sangat kedinginan. Kemudian, sambil menarik selimut, Anda bertanya lagi.
+
+Anda : “Berapa suhu saat ini?”
+
+Asisten digital : “Sekarang, suhu di Bandung 14 derajat celcius”
+
+Dengan suhu sedingin ini, rasanya enggan untuk beranjak dari tempat tidur. Melanjutkan tidur sambil meringkuk di dalam selimut yang hangat sepertinya ide bagus. Namun, Anda kemudian ingat ada janji temu klien hari ini tapi entah jam berapa. Anda lantas bertanya lagi.
+
+Anda: “Apa saja jadwalku hari ini?”
+
+Asisten digital menjawab dengan membacakan seluruh jadwal pada kalender digital Anda hari itu, termasuk jadwal meeting dengan klien pada pukul 7 pagi. Artinya, Anda tidak bisa lanjut rebahan dan harus segera bangkit dari tempat tidur untuk bersiap.
+
+dos-f322ea81f4d4e4065743a6243f52015520240106154118.jpeg
+
+Anda mungkin familier dan pernah menggunakan asisten digital. Bahkan, sebagian dari Anda mungkin telah lama menggunakannya dalam kehidupan sehari-hari. Tentu saja, bahasa yang Anda gunakan saat berkomunikasi dengan asisten digital bukanlah bahasa pemrograman formal seperti Python atau C, melainkan bahasa alami seperti yang Anda gunakan sehari-hari untuk berkomunikasi dengan sesama manusia.
+
+Permasalahannya, komputer hanya dapat memproses data dalam biner. Lalu, bagaimana kita membuat mesin memahami bahasa alami tersebut? Di sinilah bidang Natural Language Processing (Pemrosesan Bahasa Alami) berperan. NLP merupakan subbidang dari Artificial Intelligence (AI) untuk memproses, menganalisis, memahami, dan menghasilkan bahasa manusia. NLP termasuk bidang keilmuan AI karena pemrosesan bahasa dianggap sebagai bagian dari kecerdasan manusia. Penggunaan bahasa merupakan keterampilan paling menonjol yang membedakan manusia dengan makhluk lainnya.
+
+NLP mencakup berbagai algoritma, metode, dan pemecahan masalah yang menggunakan teks sebagai input. NLP menghasilkan beberapa informasi sebagai output, seperti label, representasi semantik, dan sebagainya. Teknik NLP digunakan di setiap aplikasi cerdas yang melibatkan bahasa alami. Ia merupakan komponen penting dalam berbagai aplikasi perangkat lunak yang kita gunakan dalam kehidupan sehari-hari.
+
+Besarnya peluang pengembangan NLP ini berdampak pada semakin banyaknya perusahaan menerapkan NLP dalam produk maupun bisnisnya. Hal ini berpengaruh pada permintaan akan pakar atau tenaga ahli di bidang NLP. Tentu ini peluang bagus bagi Anda yang tertarik untuk mendalami NLP. Semangat!
+
+Nah, berbicara tentang penerapan NLP, kita bisa menemukan penerapan NLP pada banyak bidang. Sebagai contoh, bidang e-commerce, pendidikan, keuangan, hiburan, perawatan kesehatan, layanan pelanggan, dan marketing. 
+
+Pada bidang marketing, salah satu aplikasi NLP yang telah dibahas di materi sebelumnya adalah analisis sentimen untuk social media monitoring. Selain yang telah disebutkan tadi, NLP memiliki peran signifikan pada berbagai produk dan layanan. Salah satu contoh penerapan yang paling populer pada aplikasi NLP adalah mesin pencari. 
+
+Siapa yang tidak mengenal mesin pencari? Tempat kita mencari dan bertanya mengenai berbagai hal di internet. Mesin pencari modern seperti Google dan Bing seolah telah menjadi bagian tak terpisahkan dalam kehidupan daring umat manusia. Nah, di balik kecanggihan mesin pencari, ada peran penting NLP dalam berbagai tahap pengembangannya.
+
+Salah satu contohnya adalah pada tahap analisis kueri (query analysis). Analisis kueri mengidentifikasi intensi pengguna saat mengetikkan kata kunci pada mesin pencari kemudian memberikan informasi yang relevan. Misalnya, jika kita mengetik nama seorang tokoh terkenal pada mesin pencari, akan muncul berbagai informasi penting yang relevan dengan tokoh tersebut. Selain itu juga muncul beberapa berita mengenai tokoh tersebut.
+
+dos-8bbdbf3439df0b2d468b392de31fbd8420240106154119.jpeg
+
+Selain itu, mesin pencari juga memiliki fungsi koreksi dan rekomendasi kueri. Fungsi ini biasanya muncul saat kita mengetikkan ejaan yang salah dalam mesin pencari. Ketika hal tersebut terjadi, mesin menunjukkan koreksi dengan label seperti “menampilkan hasil untuk (ejaan yang dikoreksi)” atau “telusuri (ejaan salah yang kita ketik)”. Fungsi ini tentu memudahkan proses pencarian dan mengoptimalkan pengalaman pengguna.
+
+Sampai di sini, Anda telah memahami beberapa contoh penerapan dari deep learning, mulai dari data yang berupa citra hingga proses pengolahan bahasa alami. Dengan uraian tersebut, diharapkan Anda dapat memahami cara kerja deep learning dan dapat memiliki ide untuk membuat deep learning berdasarkan permasalahan yang ada di sekitar. 
+Agar Anda lebih memahami proses pengembangan deep learning, pada materi selanjutnya kita akan mulai latihan pembuatan deep learning dengan menggunakan teachable machine. Sudah tidak sabar, bukan? Tetap semangat sampai akhir, ya!
