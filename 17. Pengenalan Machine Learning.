@@ -1,0 +1,98 @@
+Pengenalan Machine Learning
+Hai, Selamat telah mencapai modul 3! Bagaimana perjalanan belajar Anda pada kelas ini, menyenangkan, bukan? Sekarang saatnya Anda mengarungi kelas ini lebih dalam lagi. Kencangkan sabuk pengaman, jika sudah siap mari kita berangkat!
+
+Pada modul ini, kita akan mempelajari seluk-beluk dari Machine Learning (ML) mulai dari pengenalan, tipe-tipe ML, ML workflow, model maintenance, batasan ML saat ini, hingga penerapan ML di industri sekarang. Wow, sangat banyak, ‘kan? Namun, Anda tidak perlu bingung. Jika memiliki pertanyaan selama mempelajari modul ini, jangan sungkan untuk menanyakan di forum diskusi, ya!
+
+Seperti yang sudah dijelaskan pada materi taksonomi AI, secara singkat machine learning (ML) merupakan salah satu cabang dari AI. Machine learning menggunakan algoritma untuk menganalisis data dalam jumlah yang besar, belajar dari pengetahuan yang ada pada data, dan akhirnya akan memberikan keputusan berdasarkan pengalaman yang dimilikinya. 
+
+Dalam satu dekade terakhir, machine learning menjelma sebagai bidang yang berkembang sangat pesat dan terus dikembangkan para ilmuwan seluruh dunia. Inilah inti dari berbagai macam produk berteknologi tinggi terkini. Perannya sangat signifikan dalam disrupsi industri 4.0 yang sarat dengan transformasi digital. 
+
+Sampai di sini, apakah Anda sudah siap untuk mengetahui machine learning lebih dalam? Mari kita simak bersama pengertian machine learning serta perbedaannya dengan pemrograman tradisional. 
+
+Traditional Programming vs Machine Learning
+Agar kita memiliki perspektif yang sama terhadap machine learning, mari kita mundur sejenak dan mulai dengan mendefinisikan apa itu machine learning. Jika Anda melakukan pencarian di mesin pencari (search engine) seperti google, bing, DuckDuckGo dan lain sebagainya, Anda akan mendapatkan definisi yang beragam tentang machine learning. Hal ini tidak jadi masalah karena secara umum definisi tersebut memiliki kesamaan. Pada modul ini, kita akan membahas definisi machine learning yang disampaikan oleh Arthur Samuel.
+
+Arthur Samuel merupakan seorang ilmuwan komputer yang memelopori kecerdasan buatan pada tahun 1959. Dia merupakan orang pertama yang memopulerkan term “machine learning”. Menurutnya, machine learning adalah suatu cabang ilmu yang memberi komputer kemampuan untuk belajar tanpa diprogram secara eksplisit. Bagaimana maksudnya?
+
+Mari kita mundur sejenak ke masa sebelum machine learning ditemukan. Seperti dikemukakan oleh Moroney[2], prinsip atau paradigma pemrograman sejak permulaan era komputasi direpresentasikan dalam diagram berikut.
+
+dos-20277de361b90ded72954d9efb9cba6020240106140317.jpeg
+
+Pada pemrograman tradisional aturan dan data merupakan sebuah input bagi komputer.  Secara eksplisit, aturan diekspresikan dalam bahasa pemrograman. Tambahan masukan berupa data kemudian akan menghasilkan solusi sebagai keluaran. Paradigma pemrograman seperti pada diagram di atas sering disebut sebagai pemrograman tradisional.
+
+Pemrograman tradisional memiliki keterbatasan karena ia rigid dengan sekumpulan aturan “if” dan “else” untuk memproses data atau menyesuaikan dengan masukan. Sebagai contoh, kita ingin membuat sebuah program untuk melakukan klasifikasi pelanggan. Kita bisa menggunakan parameter “umur” sebagai data untuk membedakan kategori satu dengan lainnya.
+
+Perhatikan contoh penggunaan if berikut.
+
+if umur <= 17:
+    kategori = “Bukan prioritas”
+else:
+    kategori = “Prioritas”
+Pada contoh di atas, kita membuat algoritma program tradisional menggunakan python sebagai bahasa pemrogramannya. Tujuannya untuk melakukan klasifikasi jika umur kurang dari atau sama dengan 17 maka termasuk kategori bukan prioritas. Lalu, bagaimana jika ada penambahan parameter seperti “pendapatan”? Kondisinya akan berubah menjadi seperti berikut.
+
+if umur <= 17:
+    if pendapatan <= 3000000:
+        kategori = “Bukan prioritas”
+    else:
+        Kategori = “Prioritas”
+else:
+    kategori = “Prioritas”
+Mudah, bukan? Kita hanya perlu memberikan aturan dan data agar menghasilkan jawaban yang diinginkan.  Namun, bayangkan jika kita ingin membuat klasifikasi pelanggan tersebut menjadi lebih detail. Bayangkan kita memiliki parameter sebagai berikut.
+
+Parameter
+
+Bukan Prioritas
+
+Prioritas
+
+Pengeluaran
+
+0-1500000
+
+>1500000
+
+Member
+
+Bukan
+
+Ya
+
+Jarak Rumah
+
+>20 KM
+
+<= 20 KM
+
+Pekerjaan
+
+Tidak Bekerja
+
+Bekerja
+
+Jumlah beli produk
+
+< 10
+
+>= 10
+
+Berdasarkan tabel di atas, tentu kita harus membuat kondisi if lebih banyak lagi. Bayangkan lebih jauh lagi jika kita memiliki sekitar 100 kondisi if else dengan berbagai parameter untuk menentukan segmentasi pelanggan. Tentu kondisi tersebut akan membuat programmer kewalahan. 
+
+dos-106b595c1955704841c5bd1bed69cacf20240106140311.jpeg
+
+Dengan kondisi yang sangat banyak, kita akan menemui masalah. Hal ini membuat kita menyadari bahwa pemrograman tradisional memiliki keterbatasan dalam menyelesaikan masalah. Perhatikan salah satu contoh jika kita memiliki banyak kondisi if else.
+
+dos-50fb05197fa0c76320deedc69ab76cf220240106140317.jpeg
+
+Pada pemrograman tradisional kita merepresentasikan masalah menjadi aturan dalam bahasa pemrograman. Kini ketika hal itu tidak lagi memungkinkan, kita perlu mengubah alur berpikir kita dengan cara yang berbeda. Paradigma baru pemrograman dengan machine learning adalah kita memiliki banyak sekali data dan label bagi data tersebut. Kita juga telah mengetahui keterkaitan antara data dengan label sebagai suatu solusi. Paradigma machine learning dapat direpresentasikan dalam diagram berikut.
+
+dos-4533d47b91333f67c3403c1cb8869e2f20240106140317.jpeg
+
+Ketika perusahaan memiliki banyak sekali data dan mengharuskan kita untuk mempelajari data tersebut tentu akan memakan waktu yang cukup lama atau bahkan jika data tersebut berisikan hal yang tabu bagi kita tentu akan membuat pusing tujuh keliling. Dengan menggunakan machine learning kita tidak perlu lagi mempelajari keseluruhan data dan membuat aturan secara ekspilisit. Dengan menggunakan machine learning kita hanya perlu menentukan algoritma sehingga machine learning dapat menentukan aturannya sendiri. Bagaimana caranya?
+
+Algoritma machine learning dapat mencari pola tertentu dari sekumpulan data. Ia menentukan karakteristik data sehingga dapat menyimpulkan sebuah aturan. Perhatikan tanda panah di sebelah kanan diagram paradigma machine learning di atas. Paradigma machine learning menghasilkan aturan atau rules sebagai keluarannya. 
+
+Selanjutnya, aturan ini dapat digunakan untuk melakukan identifikasi dan prediksi bagi data baru yang relevan dengan model machine learning yang kita miliki. Dengan menerapkan machine learning, kita tidak perlu lagi menuliskan seluruh kondisi yang kompleks tersebut. Sangat efisien dan menarik, ‘kan? 
+
+image
+
+Berikutnya, kita akan mempelajari tipe-tipe machine learning agar Anda dapat membuat model machine learning yang sesuai dengan data yang dimiliki. Semangat!
