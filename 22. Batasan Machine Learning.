@@ -1,0 +1,20 @@
+Batasan Machine Learning
+Anda tentu sudah mempelajari berbagai macam pengetahuan tentang machine learning mulai dari pengenalan, tipe-tipe machine learning, machine learning workflow, model maintenance, hingga contoh penerapannya. 
+
+Mari kita mundur sejenak pada penerapan machine learning. Anda telah mempelajari salah satu contoh penerapan machine learning yaitu sistem rekomendasi Netflix. Sistem tersebut dapat memberikan rekomendasi dalam waktu yang sangat cepat. Bayangkan jika kita sebagai manusia harus melakukan perhitungan untuk menentukan rekomendasi terhadap pengguna yang berbeda-beda, sangat memakan waktu dan tenaga, bukan?
+
+Penerapan machine learning tersebut menunjukkan hal yang bisa dilakukan oleh machine learning saat ini. Sayangnya, kita hanya melihat serangkaian kisah sukses dan jarang sekali membaca kisah kegagalan machine learning. 
+
+Kegagalan tersebut disebabkan oleh ekspektasi pengguna yang terlalu tinggi terhadap machine learning dan meminta programmer untuk membuat hal-hal yang tidak dapat dilakukan oleh machine learning saat ini. Tujuan dari materi ini untuk mengasah intuisi Anda tentang apa yang mungkin dapat dibangun berdasarkan permasalahan di sekitar atau bahkan perusahaan. 
+
+Salah satu batasan machine learning saat ini adalah rasa empati yang tidak dimilikinya. Bayangkan ketika Anda akan membalas sebuah email yang berisi tentang keluhan seorang pelanggan yang akan berulang-tahun. Email balasan tersebut akan berisi tentang rasa prihatin karena keluhan yang dirasakan oleh pelanggan beserta ucapan selamat karena berulang tahun. 
+
+Akan mudah rasanya jika kita membalas pesan tersebut, tetapi hal tersebut menjadi rumit bagi machine learning karena mesin tidak memiliki empati dan akan membalas sesuai dengan data yang telah dipelajari sebelumnya.
+
+Batasan tersebut merupakan salah satu contoh hal yang tidak bisa dilakukan oleh machine learning saat ini. Kami harap dengan memberikan salah satu contoh batasan pada machine learning, akan dapat membantu mengasah intuisi Anda tentang apa yang dapat dan tidak dapat dilakukan oleh machine learning. 
+
+Dengan mempelajari batasan pada machine learning, Anda dapat membayangkan beberapa hal di perusahaan atau kehidupan sehari-hari yang mungkin layak dan tidak layak untuk dieksplorasi lebih lanjut terhadap pengembangan machine learning. Setelahnya, dengan mempelajari materi ini, Anda dapat meningkatkan peluang memilih proyek yang layak dan sesuai dengan permasalahan yang saat ini dihadapi. 
+
+Sampai di sini, bagaimana menurut Anda? Batasan yang ada pada machine learning saat ini perlu kita pelajari agar tidak salah menentukan proyek dan terlalu jauh berimajinasi yang akhirnya akan menyulitkan kita pada proses pengembangan machine learning.
+
+Selamat, Anda telah menyelesaikan modul Pengantar Machine Learning ini! Semoga ilmu ini membuat cakrawala pemahaman Anda seputar dunia ML semakin luas. Agar lebih semangat, kita akan bersama-sama mempelajari hal yang lebih seru di modul berikutnya. Yap, deep learning! Sampai jumpa dan tetap semangat, ya.
