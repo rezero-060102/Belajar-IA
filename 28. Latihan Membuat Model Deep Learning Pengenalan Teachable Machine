@@ -1,0 +1,85 @@
+Latihan Membuat Model Deep Learning
+Pengenalan Teachable Machine
+Setelah Anda mempelajari AI mulai dari pengertian AI hingga deep learning pada kelas ini, tentunya tidak lengkap rasanya jika tidak membuat sebuah model machine learning. Anda akan mempelajari pembuatan deep learning pada modul ini menggunakan teachable machine yang tentunya sangat mudah. 
+
+Mungkin Anda bertanya apa itu teachable machine? Teachable Machine adalah alat berbasis web yang dapat membuat model machine learning menjadi cepat, mudah, dan dapat diakses oleh semua orang. Alat ini dirancang untuk siapa pun dari segala latar belakang. Semua orang yang memiliki ide dan keinginan untuk melakukan implementasi machine learning dapat menggunakan alat ini. Untuk membuat model, tidak diperlukan pengetahuan terkait machine learning secara mendalam, bahkan untuk yang awam sekalipun dapat menguasai alat ini. Sangat menarik, ‘kan?
+
+dos-cdbfe4aad6f75256f88a7e8682681e5020240106154829.jpeg
+
+Teachable machine dapat melatih komputer untuk mengenali gambar, suara, dan pose Anda tanpa menulis kode sedikit pun. Kemudian, model yang telah dibuat dapat Anda gunakan dalam proyek, situs, aplikasi dan yang lainnya. Anda dapat menyimpan model yang telah dibuat menjadi berbagai jenis model ekstensi, seperti TensorFlow, TensorFlow.js, dan TensorFlow Lite.
+
+Lalu, bagaimana cara membuat model menggunakan teachable machine tersebut? Daripada berlama-lama, mari kita langsung pelajari bersama langkah-langkahnya di bawah ini.
+
+Kunjungi website teachable machine di sini.
+Setelah Anda masuk pada halaman utama, pilih menu “New Project”
+dos-7f87e9ff454eb1e28495cde5c9ea805720240106154827.jpeg
+Anda dapat memilih model machine learning yang akan dibuat berdasarkan data yang dimiliki, mulai dari gambar, audio hingga pose. Pada tutorial ini, kita akan membuat model untuk mengenali sebuah gambar sehingga kita perlu memilih menu “Image Project”.
+dos-2ca2a23b87aeec0dc74b10e39e1e313020240106154835.jpeg
+Pada tahapan ini, Anda dapat memilih model yang akan dibuat menjadi 2 pilihan. Dalam kasus ini, pilihlah Standard image model karena kita akan mengklasifikasikan gambar yang memiliki warna.
+dos-b0f25cd0adba4a3c29fb8d9764cc030620240106154835.jpeg
+Selanjutnya, Anda diminta untuk memasukkan label kelas dan dataset yang sesuai dengan permasalahan yang ingin diselesaikan oleh komputer.
+dos-f900846cc190153a9c0ffbf8215c46db20240106154836.jpeg
+Dalam kasus ini, kita ingin membuat komputer dapat membedakan angka satu dan dua berdasarkan jumlah jari. Oleh karena itu, buatlah dua buah kelas yang memiliki label “Satu” dan “Dua” sehingga menghasilkan dataset seperti berikut.
+dos-ebb2ebf18232a4ae385f89bba7f821fe20240106154839.jpeg
+Saat dataset sudah siap untuk diolah oleh komputer, Tekan tombol “Train Model” untuk memulai proses pembelajaran berdasarkan dataset yang dimiliki. Selama proses pembelajaran berlangsung tidak diperbolehkan untuk meninggalkan halaman tersebut. 
+Setelah proses pembelajaran selesai, Anda dapat menguji model yang telah dibuat secara langsung di halaman yang sama. Perhatikan gambar berikut.
+Fl4BVKkW3AuxzKAT5k5MrR_gN8msC3cfPfClT12kIKEebl3nZFxinxDfWkG1ndeYiUMFBdvZ2TMYVjwrfJXmjBkzF1FpGgcfRyuj3KFnVsDrlipjE69a13uKhW7BhWrAoyyREQCBJGzcec04XfeVrgwdos-8e7d193094297f640f1fff894860316420240106154829.jpeg
+Setelah menguji model yang telah Anda buat, apakah model tersebut dapat mendeteksi jumlah jari dengan benar? Jika model yang Anda buat dengan teachable machine berhasil mendeteksi jumlah jari dengan benar, selamat! Anda telah berhasil membuat sebuah model AI yang dapat mendeteksi jumlah jari dengan benar.
+Langkah terakhir dari proses pembuatan model ini adalah export model. Anda dapat menekan tombol “Export Model” pada halaman yang sama.
+dos-88520c6f9272666cbfb95106982cc46b20240106154827.jpeg
+Pada tahapan ini, Anda akan diminta untuk memilih ekstensi model yang akan digunakan pada tahap produksi. Ekstensi yang dipilih menyesuaikan dengan platform yang akan Anda gunakan nantinya. Berikut merupakan ekstensi yang disediakan oleh teachable machine.
+dos-9e9a97fd9a8298cabc8a62423dcc2a7720240106154838.jpeg
+Seperti yang Anda lihat, teachable machine menyediakan ekstensi yang berbeda-beda dan membebaskan pengguna untuk memilih ekstensi yang akan digunakan tergantung pada kebutuhan Anda. Sebagai contoh jika Anda memilih ekstensi TensorFlow Lite berarti platform yang akan digunakan adalah mobile/edge. Selain itu, Teachable machine menyediakan tiga buah ekstensi, yaitu TensorFlow, TensorFlow.js, dan TensorFlow Lite. Apa perbedaannya? Kita akan cari tahu bersama pada materi selanjutnya.
+Sampai di sini, bagaimana menurut Anda? Cukup mudah dan menyenangkan membangun sebuah model dengan teachable machine, ‘kan? Kami harap Anda dapat mencoba membuat sebuah model machine learning sesuai permasalahan masing-masing. Jika sudah mencoba membuat model machine learning, ceritakan pengalaman dan hasilnya pada forum diskusi, ya. 
+
+Selanjutnya, kita akan membahas mengenai ekstensi yang ada pada teachable machine sehingga Anda dapat menentukan model yang cocok untuk proses deployment.
+
+
+
+Ekstensi Model
+Setelah Anda membuat sebuah model machine learning, tentu perlu melakukan export model tersebut menjadi ekstensi tertentu agar dapat digunakan pada platform yang diinginkan. Permasalahan yang muncul saat ini adalah tidak ada ekstensi yang cocok dengan berbagai platform, katakanlah Anda ingin men-deploy model yang Anda buat di web atau mobile device. Anda perlu membuat model machine learning dengan bentuk atau ekstensi tertentu agar bisa di-consume oleh platform tersebut. 
+
+Untuk menyelesaikan tersebut teachable machine menyediakan beberapa ekstensi seperti TensorFlow.js dan TensorFlow Lite sebagai pilihan export model machine learning. Pertanyaannya, apa perbedaan dari masing-masing ekstensi yang disediakan oleh teachable machine? Bagaimana cara kita menentukan ekstensi yang cocok untuk proyek yang sedang dibangun?
+
+Simak penjelasannya di bawah ini untuk mengetahui jawabannya.
+
+
+
+TensorFlow.js
+TensorFlow.js memungkinkan kita untuk membangun aplikasi machine learning pada Web Browser. Ia adalah sebuah framework yang kompatibel dengan TensorFlow API. TensorFlow.js menggunakan model yang telah dibuat dengan mengubah format model menjadi JSON file. 
+
+Pada level atas TensorFlow.js API, kita akan dihadapkan dengan Layers API. Jika familier dengan penggunaan layer-layer pada Keras, kita dapat lebih mudah untuk menggunakan Layers API. 
+
+Di bawah layers API, ada Core API yang menangani model dari TensorFlow. Core API juga mengimplementasikan operasi graf pada level lebih kompleks, seperti deklarasi tensor (data input), operasi pada tensor, memori, eksekusi fungsi, dan lain-lain. 
+
+Selain itu CORE API bekerja dengan browser dan menggunakan WebGL untuk menggunakan resource yang mendukung proses training atau pengambilan hasil prediksi (inference). Pada Node.js, kita bisa membuat aplikasi server-side dan menggunakan resource yang tersedia, seperti CPU, GPU, atau TPU.
+
+dos-7cdd238523e0ae29652307f39e353d3a20240106154843.jpeg
+
+Terdapat beberapa keuntungan menggunakan TensorFlow.js seperti memudahkan kita dalam melakukan integrasi dengan teknologi web seperti user interface karena TensorFlow.js dapat ditulis dalam bahasa script. Selain itu, TensorFlow.js memudahkan kita pada beberapa utilitas yang dapat kita import seperti document object model (DOM) canvas yang memungkinkan kita mendapat data langsung dari input user di internet.
+
+Jika ada kelebihan, pasti ada kekurangan. TensorFlow.js juga memiliki kekurangan, salah satunya yaitu penggunaan web browser sebagai platform machine learning menyebabkan permasalahan performa. Web browser biasanya merupakan aplikasi dengan single proses dan tidak bekerja intens dengan CPU. Namun, modern web browser sudah menyediakan API yang bisa memanfaatkan lokal hardware akselerator dengan menggunakan WebGL atau WebGPU. Dengan adanya API tersebut, TensorFlow.js dapat memberikan performa yang sama baiknya walaupun menggunakan browser. 
+
+Web browser merupakan platform yang cocok untuk men-deploy model dengan ekstensi TensorFlow.js. Selanjutnya, mari kita pelajari proses deployment model machine learning pada perangkat mobile dan IoT. 
+
+
+
+TensorFlow Lite
+Sebelumnya Anda telah mempelajari proses deployment menggunakan TensorFlow.js yang cocok diimplementasikan pada web browser. Pada bagian ini, kita akan berkenalan dengan TensorFlow Lite. TensorFlow Lite (TF-Lite) merupakan sebuah framework yang dapat menjalankan model TensorFlow pada perangkat mobile dan IoT. 
+
+Machine learning pada perangkat mobile dapat memudahkan manusia dalam menyelesaikan tugas sehari-hari. Selain itu, implementasi model machine learning pada perangkat mobile menggunakan TF-Lite juga memiliki beberapa keuntungan seperti berikut.
+
+Penggunaan TF-Lite tidak memerlukan server sehingga perangkat tidak harus terhubung ke internet untuk melakukan prediksi dan mampu menjaga privasi pengguna.
+Memiliki Latency dan ukuran binary yang kecil sehingga dapat mengurangi konsumsi daya ketika melakukan prediksi.
+Dengan adanya machine learning pada perangkat mobile, kita dapat melakukan beragam aktivitas dengan lebih mudah dan efisien. Agar semakin paham, mari kita bahas beberapa contoh penggunaan machine learning pada perangkat mobile.
+
+Traveloka OCR merupakan salah satu contoh penerapan machine learning yang dapat mengenali identitas seseorang berdasarkan foto KTPnya. Fitur ini dapat membantu kita dalam mengisi identitas pada platform Traveloka agar mempercepat proses pengisian data dan menghindari kesalahan manusia pada proses pengisian secara manual.
+auIwxDfZyHOdcDpvH8rnMg2-DBhR94BCACStboD5VrzjpGlGcertwi6TioM6NjVjCsPHGBfTw3mSWpi2gVvUqG7cqr-EUm6iSm_9iEm4Uhob1Mw4J_r4zFay2xQ5o8QSb0VShJwhgdYqkfY2CZHHW0M
+Google Translate Instant Camera Translation yang dapat menerjemahkan teks bahasa asing dengan foto. Fitur ini dapat membantu turis mancanegara dalam memahami bahasa asing ketika berlibur tanpa bantuan penerjemah sehingga mereka tidak perlu khawatir ketika berlibur ke negara asing.
+V7QHQT0M6LyrwQIAz9gln2lbtxWGkpYRxbM1YBL21i1LS0RJ8n2eJcp--AHM31K630UYRPdWNp8lxZOuWPKvVEBnk36O83GYYy8sDRXXVvnut0xi2O_hEhbZIIFCuYOpMpFc4HONem4jq-4QCVWsyEk
+Sebelum menjalankan model TensorFlow pada perangkat mobile, kita perlu memahami arsitektur TF-Lite terlebih dahulu. Berikut merupakan ilustrasi sederhana arsitektur TF-Lite.
+
+GbLLq1fL5j3O7tIY4EFl-HKVEYVrtOqR3cZzSwe3jMDnWnLO87aopJHcIW7f5mFFCcPDgaHefKTvH-zwsYfDQtqWHD4JZd31QpBNgDGebVaSoA2mxz5I7S9ZpxFbtoabJXCHIoRRzqV1umbdQxcB1a4
+
+Setelah melatih model menggunakan teachable machine, Anda bisa memilih export model dengan pilihan “TensorFlow Lite”. Sekadar informasi, TF-Lite juga dilengkapi dengan API untuk berbagai macam bahasa pemrograman, seperti C, C++, Swift, Java, dan Python. Menarik, ‘kan?
+Sampai tahap ini, Anda telah memahami perbedaan extension model yang ada pada teachable machine. Dengan pengetahuan perbedaan antara Tensorflow.js dan Tensorflow Lite tersebut, Anda dapat melakukan implementasi model yang telah dibuat pada platform yang sesuai. Well done!
