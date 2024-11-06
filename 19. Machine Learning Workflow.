@@ -1,0 +1,98 @@
+Machine Learning Workflow
+Pada modul ini kita akan membahas beberapa tahapan machine learning workflow mulai dari pengumpulan data, data preprocessing, model development, model evaluation hingga model deployment. 
+
+dos-721877c25942048b504c776bcac8bb9c20240106152136.jpeg
+
+Machine learning workflow memiliki tahapan iteratif yang berarti prosesnya bisa berulang sesuai dengan kebutuhan. Anda dapat mengevaluasi ulang proses yang Anda jalankan dan kembali ke langkah sebelumnya ketika dibutuhkan. Machine learning worfklow umumnya memiliki lima tahapan yang berkesinambungan. Mari kita uraikan bersama tahapan umum pada proses pembuatan machine learning bersama-sama.
+
+
+
+Pengumpulan Data
+dos-3ed4a11e4992813d4c2165829a15013d20240106152136.jpeg
+
+Proses pengumpulan data dapat dilakukan dengan mengambil dataset dari sumber yang sudah disediakan, seperti dari kaggle, zenodo, UCI, dan lain sebagainya. Dari sumber-sumber tersebut, Anda dapat memilih, mengunduh, dan menggunakan dataset yang sesuai dengan kebutuhan Anda. Proses ini relatif mudah. Tantangannya adalah memilih dataset yang tepat untuk model Anda. 
+
+Namun, jika Anda adalah seorang Machine Learning Engineer pada sebuah perusahaan yang bertugas untuk membangun model ML untuk keperluan perusahaan, tentu proses pengumpulan datanya tidak semudah mengunduh dataset yang sudah jadi. Anda perlu mengumpulkan dan mengekstrak sendiri data dari berbagai sumber, seperti dari database, file, data sensor, dan sumber lainnya.
+
+Pada tahap ini, Anda juga perlu berurusan dengan berbagai jenis tipe data mulai dari structured data (seperti excel file atau database SQL), hingga unstructured data (seperti text file, email, video, audio, gambar, data sensor, dan lainnya). Seorang analis yang bekerja pada sebuah perusahaan yang melakukan riset dan penasehatan global menyatakan bahwa lebih dari 80% data yang digunakan saat ini adalah unstructured data.
+
+Namun, pada tahap ini dataset yang Anda miliki masih mentah. Agar dapat digunakan dengan maksimal pada pembangunan machine learning, dataset harus dikelola sedemikian rupa sesuai dengan tujuan pembangunan model machine learning. Tahapan tersebut disebut preprocessing data.
+
+
+
+Data Preprocessing
+dos-0d3b40d634971978639478177a9c572920240106152137.jpeg
+
+Data preprocessing adalah tahapan pengolahan data lebih lanjut sehingga menjadi lebih siap dalam pengembangan model machine learning. Dengan kata lain, proses ini mengubah fitur-fitur data ke dalam bentuk yang mudah diinterpretasikan dan diproses oleh algoritma machine learning. Data preprocessing memiliki beberapa bagian, yaitu data cleaning, data transformation, dan data integration. 
+
+Beberapa hal yang bisa dilakukan dalam proses data cleaning antara lain 
+
+penanganan missing value, 
+data yang tidak konsisten, 
+duplikasi data, 
+ketidakseimbangan data, 
+dan lain sebagainya.
+Selain itu, ada juga beberapa hal yang bisa dilakukan untuk proses transformasi data seperti 
+
+scaling atau mengubah skala data agar sesuai dengan skala tertentu, 
+standarisasi,
+normalisasi, 
+mengonversi data menjadi variabel kategori, 
+dan sebagainya.
+Lalu, bagaimana dengan data integration? Berikut beberapa hal yang bisa dilakukan pada tahap data integration. 
+
+Menggabungkan dataset.
+Menghilangkan fitur yang duplikat. 
+Menyamakan format; dan lain sebagainya.
+
+Model Development
+dos-d0d2baa61877cc1ffae6b1c5d7e74f1020240106152138.jpeg
+
+Setelah kita memiliki data yang sudah siap digunakan, mari kita mulai proses model development. Pada konteks machine learning, model development bisa berarti dua hal: pemilihan learning method atau algoritma ML; dan pemilihan hyperparameter terbaik untuk metode machine learning yang dipilih. 
+
+Ada seorang peneliti bernama K.P Murphy menuliskan sebuah kalimat, 
+
+“When we have a variety of models of different complexity (e.g., linear or logistic regression models with different degree polynomials, or KNN classifiers with different values of K), how should we pick the right one?”[17]. 
+
+Berangkat dari pertanyaan tersebut, menentukan model yang sesuai dengan data yang kita miliki merupakan tahapan yang penting dalam machine learning workflow. 
+
+Jie Ding, et al dalam tulisannya “Model Selection Techniques -An Overview” [5] menyatakan bahwa tidak ada model yang cocok secara universal untuk data dan tujuan apa pun. Pilihan model atau metode yang tidak tepat dapat menyebabkan kesimpulan yang menyesatkan atau performa prediksi yang mengecewakan. Sebagai contoh, saat memiliki kasus klasifikasi biner, kita perlu mempertimbangkan model terbaik untuk data kita, apakah logistic regression atau SVM classifier. 
+
+Setelah kita menentukan metode yang cocok untuk data yang ada, kita perlu mengubah hyperparameter untuk mendapatkan performa terbaik dari model. Hyperparameter di sini merupakan variabel yang digunakan untuk mengontrol proses pelatihan model, contohnya seperti epochs, optimizer, dan lain sebagainya. 
+
+Dengan mengubah nilai hyperparameter saat kita menjalankan algoritma ML akan memberikan hasil atau performa model yang berbeda. Proses menemukan performa terbaik model dengan pengaturan hyperparameter yang berbeda ini juga disebut model development.
+
+
+
+Model Evaluation
+dos-ca37e15d51f187135a54e2818d62962020240106152138.jpeg
+
+Setelah mengutak-atik model dengan hyperparameter yang berbeda, akhirnya Anda mendapatkan model yang kinerjanya cukup baik. Langkah selanjutnya adalah mengevaluasi model akhir pada data uji. 
+
+Sederhananya, langkah evaluasi model dapat dijabarkan sebagai berikut. 
+
+Memprediksi label pada data uji. 
+Menghitung jumlah dari hasil prediksi berdasarkan data uji. Pada tahap ini menghitung keseluruhan kondisi yang ada, seperti jumlah dari kondisi prediksi yang memiliki status benar ataupun salah. 
+Membandingkan hasil prediksi dengan data label yang kita miliki. Dari data perbandingan ini, kita dapat menghitung akurasi atau performa model.
+Pada prinsipnya proses model evaluation adalah menilai kinerja model ML pada data baru, yaitu data yang belum pernah “dilihat” oleh model sebelumnya. Evaluasi model bertujuan untuk membuat estimasi generalisasi error dari model yang dipilih, yaitu seberapa baik kinerja model tersebut pada data baru. 
+
+Idealnya, model machine learning yang baik adalah model yang tidak hanya bekerja dengan baik pada data training, tetapi juga pada data baru. Oleh karena itu, sebelum mengirimkan model ke tahap produksi, Anda harus cukup yakin bahwa performa model akan tetap baik dan tidak menurun saat dihadapkan dengan data baru.
+
+
+
+Model Deployment
+dos-ba60c71e47ccb3bdc350f1d2fec1ba5020240106152139.jpeg
+
+Bonjour! Sampai sini kita telah belajar mulai dari pengumpulan data, data preprocessing, model development, hingga model evaluation. Bagaimana perjalanan Anda, menyenangkan, bukan? Selamat, kita telah sampai pada tahapan terakhir machine learning workflow yaitu model deployment.
+
+Setelah model dievaluasi, model siap untuk dipakai pada tahap produksi yang biasanya disebut model deployment. Caranya adalah dengan menyimpan model yang telah dilatih dari tahap preprocessing hingga pipeline prediksi. Selanjutnya, jangan lupa untuk membawa seluruh tahapan pada data preprocessing untuk digunakan pada tahapan prediksi. Simpan seluruh tahapan yang dilakukan pada data preprocessing pada sebuah fungsi bernama predict yang berguna untuk memproses data baru. Kemudian deploy model tersebut ke sebuah platform seperti web, mobile, IoT dan lain sebagainya. Last but not least, kita dapat membuat prediksi dengan memanggil fungsi predict() yang sebelumnya telah dibuat. Terdengar sangat mudah, bukan?
+
+Agar penjelasan di atas lebih terbayang mari kita simak gambar berikut. Geron [6] memberikan contoh ilustrasi model deployment seperti tampak dalam gambar berikut. 
+
+dos-96642a8d0f4ef70888fabe756c90023020240205133401.png
+
+Untuk lebih memahami gambar di atas mari kita analogikan dengan sebuah studi kasus regresi. Sebuah model regresi untuk menentukan harga rumah akan digunakan dalam situs web. Pengguna akan mengetik beberapa data tentang lokasi yang diinginkan dan mengeklik tombol “Prediksi Harga”. Proses ini akan mengirimkan query yang berisi data ke server, kemudian meneruskannya ke aplikasi web Anda. Terakhir, kode akan memanggil fungsi predict() untuk memberikan hasil prediksi pada Anda. 
+
+Bagaimana semakin dalam makin seru, ‘kan?
+
+Dalam pengembangannya, machine learning melibatkan cukup banyak proses dan infrastruktur untuk membangun modelnya. Memahami algoritma machine learning memang penting, tetapi memahami keseluruhan proses machine learning hingga ke tahap produksi juga tak kalah pentingnya. Pada tahap selanjutnya, kita akan mempelajari bagaimana cara merawat dan memperbaharui model agar tetap memiliki kualitas yang baik.
