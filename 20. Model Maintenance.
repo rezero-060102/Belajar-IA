@@ -1,0 +1,43 @@
+Model Maintenance
+Umumnya sebuah model yang di-deploy kinerjanya akan turun seiring waktu. Penurunan tersebut terjadi karena model akan terus menemui lebih banyak data baru seiring waktu sehingga menyebabkan akurasi model menurun. 
+
+Sebagai contoh dalam kehidupan sesungguhnya, bayangkan kita memiliki sebuah model machine learning yang dapat memprediksi harga sebuah rumah berdasarkan beberapa fitur seperti jumlah kamar, luas tanah dan lain sebagainya. Model machine learning ini dilatih dengan data penjualan pada tahun 2010 dan telah melakukan prediksi dengan baik selama satu tahun kedepan. Namun, seiring berjalannya waktu model ini mengalami penurunan performa sehingga akan menghasilkan prediksi yang buruk pada tahun-tahun berikutnya. Penurunan performa ini dapat diakibatkan oleh banyak faktor, seperti kebiasaan pelanggan, inflasi, atau faktor alami seperti bencana alam. Penurunan performa akan diketahui ketika kita melakukan evaluasi sehingga kita harus melakukan optimasi pada model tersebut.
+
+Untuk mengatasi masalah ini, ada 2 teknik dasar dalam menjaga agar model selalu bisa belajar dengan data-data baru. Dua teknik tersebut yaitu manual retraining dan continuous learning.
+
+
+
+Manual Retraining
+Teknik pertama adalah melakukan ulang proses pelatihan model dari awal sehingga data-data baru yang ditemui di tahap produksi akan digabung dengan data lama. Selanjutnya, model dilatih ulang dari awal menggunakan data lama dan data baru.
+
+Salah satu kekurangan dari proses ini adalah dari sisi waktu dan efektivitas. Proses ini membutuhkan effort yang lebih untuk dilakukan mulai dari pengumpulan data, data preprocessing, penggabungan data lama dengan data baru, hingga proses training. Bayangkan ketika kita harus melatih ulang model dalam jangka waktu mingguan atau bahkan harian, tentunya proses tersebut akan memakan waktu yang lama, bukan?
+
+Proses manual retraining ini memang membutuhkan waktu yang lama dan effort yang lebih banyak. Namun, manual retraining memungkinan kita menemukan model-model baru atau atribut-atribut baru yang menghasilkan performa lebih baik di masa kini bahkan di masa yang akan datang.
+
+
+
+Continuous Learning
+Teknik kedua untuk menjaga model kita up-to-date adalah continuous learning yang menggunakan sistem terotomasi dalam pelatihan ulang model. Berikut alur dari continuous learning.
+
+Menyimpan data-data baru yang ditemui pada tahap produksi. Contohnya, ketika sistem mendapatkan harga emas naik, data harga tersebut akan disimpan di database.
+Ketika data-data baru yang dikumpulkan cukup, lakukan pengujian akurasi dari model terhadap data baru.
+Jika akurasi model menurun seiring waktu, gunakan data baru, atau kombinasi data lama dan baru untuk melatih dan men-deploy ulang model.
+Sesuai namanya, 3 proses di atas dapat terotomasi sehingga kita tidak perlu melakukannya secara manual.
+
+Dengan merawat dan melakukan pembaruan pada model yang telah di-deploy, ini membuat tugas yang dilakukan oleh machine learning tetap konsisten dan tepat sesuai dengan kondisi dan situasi di lapangan. 
+
+Setelah melewati perjalanan yang cukup panjang ini, bagaimana perasaan Anda? Semakin penasaran kan terkait pengembangan machine learning? Agar semakin paham terkait materi ini selanjutnya kita akan mempelajari contoh penerapan machine learning di industri.
+
+
+Daftar Modul
+58% Selesai
+
+Persiapan Belajar
+Berkenalan dengan Artificial Intelligence (AI)
+Data untuk AI
+Pengantar Machine Learning
+3/9
+Deep Learning untuk Semua Orang
+0/8
+Penutup
+0/2
