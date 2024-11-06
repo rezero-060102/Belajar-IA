@@ -1,0 +1,35 @@
+Machine Learning di Industri
+Pada era digital saat ini, banyak sekali perusahaan yang menerapkan machine learning untuk membantu menyelesaikan pekerjaannya. Salah satu contoh penerapan AI adalah sistem rekomendasi yang dikembangkan oleh Netflix. Netflix adalah layanan streaming berbasis langganan yang memungkinkan pengguna menonton acara TV dan film di perangkat yang terhubung ke Internet.
+
+Netflix menggunakan machine learning untuk merekomendasikan film kepada pengguna mereka melalui sistem rekomendasi yang mereka bangun. Sistem ini berperan penting dalam meningkatkan pengalaman pengguna dengan menyediakan rekomendasi yang disesuaikan dengan preferensi masing-masing pengguna. Berikut adalah gambaran dari sistem rekomendasi yang dikembangkan Netflix.
+
+dos-c9e8c850fd28103200ca0eb9067c22c920240106152709.jpeg
+
+Rekomendasi sistem yang dibangun oleh Netflix berjalan sesuai dengan tugasnya, hal ini dibuktikan oleh meningkatnya waktu streaming setelah menerapkan rekomendasi sistem tersebut. Menurut Todd Yellin sebagai wakil presiden dari divisi product mengatakan bahwa lebih dari 80% pengikut memercayai dan mengikuti hasil rekomendasi yang diberikan oleh sistem rekomendasi Netflix. Di sisi lain, Netflix percaya bahwa mereka dapat kehilangan hingga 1 miliar dollar setiap tahunnya jika tidak menggunakan sistem rekomendasi tersebut. 
+
+Hal tersebut menjadi sangat masuk akal dikarenakan setiap kali pengguna menggunakan Netflix, rekomendasi sistem tersebut akan memberikan bantuan untuk mencari film kepada pengguna dengan usaha yang ringan. Sebagai pengguna, kita tidak perlu lagi melakukan scrolling dengan waktu yang lama, berdasarkan perhitungan yang dilakukan oleh Netflix mereka menyatakan bahwa butuh waktu kurang lebih 90 detik untuk mendapatkan perhatian pengguna untuk memilih film. Hal tersebut yang membuat pengguna terus berlangganan dan Netflix dapat menghindari kerugian karena dampak dari ditinggalkan oleh pelanggan.
+
+Apakah Anda penasaran ingin mengetahui cara rekomendasi Netflix ini bekerja? Mari kita gali sedikit lebih dalam agar lebih memahami salah satu penerapan machine learning yang sudah ada di industri saat ini.
+
+Netflix menggunakan beberapa data yang diambil dari masing-masing pengguna sehingga dapat memperbesar kemungkinan pengguna tersebut menonton film karena sesuai dengan karakteristiknya. Faktor yang diambil dan digunakan pada sistem rekomendasi Netflix yaitu
+
+Rating yang diberikan, 
+Riwayat pencarian atau menonton, 
+Kesamaan dengan pengguna yang lainnya, 
+Informasi terkait film yang ditonton, 
+Jumlah waktu menonton dalam sehari, 
+Gawai yang digunakan, 
+Waktu regional ketika pengguna menonton (siang/sore/malam). 
+Setelah data yang dibutuhkan untuk menghasilkan rekomendasi dikumpulkan, selanjutnya data tersebut akan digunakan untuk menjadi input yang akan diproses oleh algoritma. Hasil dari proses itulah yang nantinya akan digunakan oleh Netflix. Lalu, muncul di benak kita semua “bagaimana Netflix mengolah data tersebut serta algoritma apa yang digunakannya?” Mari kita cari tahu bersama algoritma apa yang digunakan Netflix sehingga dapat menghasilkan output yang sangat baik sebelumnya.
+
+Pada tulisannya, Netflix menyebutkan bahwa mereka menggunakan beberapa macam algoritma untuk menghasilkan rekomendasi sistem, tetapi tidak menjelaskan arsitekturnya secara detail. Beberapa algoritma yang digunakan Netflix, antara lain personalised video ranking (PVR), top-N Video ranker, trending now ranker, continue watching ranker, dan video-video similarity ranker. Jika Anda ingin mengetahui lebih detail dari masing-masing algoritma tersebut, pelajari di sini, ya.
+
+Setelah algoritma menjalankan tugasnya, Netflix akan memberikan hasil rekomendasinya (output) berupa urutan film yang cocok dengan karakteristik penggunanya. Netflix memberikan hasil rekomendasinya dengan sistem peringkat berbasis dua tingkat yaitu pada kolom (rekomendasi terbaik dari kiri) dan baris (rekomendasi terbaik dari atas).
+
+dos-909738043578f780921a46e3db416c0020240106152710.jpeg
+
+Mengapa Netflix menggunakan baris dan kolom pada hasil rekomendasinya? Hal tersebut dijelaskan bahwa ada keuntungan dari dua buah sudut pandang yang berbeda yaitu pengguna dan perusahaan. Sebagai pengguna, itu membuat rekomendasi yang disajikan lebih koheren karena memiliki hubungan yang erat pada baris atau kolom yang sama. Selain itu, sebagai perusahaan akan mudah mendapatkan feedback ketika pengguna terindikasi tidak menyukai urutannya dengan cara melakukan scroll dan mengabaikan rekomendasinya. 
+
+Berdasarkan sudut pandang perusahaan tersebut, Netflix melakukan model maintenance berdasarkan feedback dari pengguna agar dapat memberikan rekomendasi yang relevan setiap waktunya. Netflix akan melakukan pelatihan ulang model untuk meningkatkan akurasi dari prediksi yang diberikan berdasarkan film yang paling sering ditonton oleh pengguna. 
+
+Bagaimana contoh salah satu penerapan machine learning di industri ini? Sangat mengagumkan, bukan? Bayangkan jika kalian membuat sebuah sistem machine learning yang berguna bagi kehidupan banyak orang, tentu sangat menyenangkan. Namun, sebelum kalian membayangkan dan berimajinasi terlalu jauh terkait implementasi machine learning, perlu diketahui bahwa saat ini machine learning masih memiliki batasan. Batasan tersebut akan kita bahas di materi berikutnya. Yuk, kita lanjutkan pembahasannya.
