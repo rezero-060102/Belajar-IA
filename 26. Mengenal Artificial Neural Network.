@@ -1,0 +1,45 @@
+Mengenal Artificial Neural Network
+ANN merupakan salah satu model ML yang multiguna, powerful, dan memiliki skalabilitas tinggi. Dengan kelebihan tersebut, ANN sangat ideal untuk dipakai dalam menangani masalah ML yang sangat kompleks, mulai dari mengklasifikasi miliaran gambar, mengenali ratusan bahasa dunia, merekomendasikan video ke ratusan juta pengguna, sampai belajar mengalahkan juara dunia permainan papan GO. Namun, tahukah Anda apa itu ANN? 
+
+Artificial Neural Network (ANN) atau Jaringan Saraf Tiruan adalah sebuah model machine learning yang terinspirasi dari neuron/saraf yang terdapat pada otak manusia. 
+
+Sebelum mengenali jaringan syaraf manusia pada komputer, sebaiknya kita mempelajari sedikit terkait saraf biologis (neuron) dalam otak manusia sesungguhnya. 
+
+National Institute of Neurological Disorders and Stroke [7] dalam tulisannya yang berjudul “Brain Basics: The Life and Death of a Neuron” menyatakan bahwa neuron atau saraf adalah pembawa pesan/informasi. Mereka menggunakan impuls listrik dan sinyal kimiawi untuk mengirimkan informasi antara area otak yang berbeda, serta antara otak dan seluruh sistem saraf.
+
+Sebuah saraf terdiri dari 3 (tiga) bagian utama, yaitu akson, dendrit, dan badan sel yang di dalamnya terdapat nukleus. Nukleus berisi materi genetik dan bertugas mengontrol seluruh aktivitas sel. Akson adalah cabang yang terlihat seperti ekor yang panjang. Ia bertugas untuk mengirimkan pesan dari sel. Panjang akson berkisar antara beberapa kali lebih panjang dari badan sel, bahkan hingga 10 ribu kali lebih panjang dari badan sel; sedangkan dendrit adalah cabang-cabang pendek yang terlihat seperti cabang pohon yang tugasnya menerima pesan untuk sel. 
+
+Setiap ujung akson dari sebuah neuron terhubung dengan dendrit dari neuron lainnya. Neuron berkomunikasi satu sama lain dengan mengirimkan senyawa kimia yang disebut neurotransmitter. Ia melintasi ruang kecil (synapse) antara akson dan dendrit neuron yang berdekatan. Ketika sebuah neuron mendapatkan rangsangan, neuron tersebut akan mengirim sinyal ke neuron lainnya. Seperti ketika kita tidak sengaja menyentuh panci yang panas, saraf di  tangan kita mengirim sinyal ke saraf lain sampai ke otak dan kita merespon dengan cepat. Pengiriman sinyal antar neuron terjadi sangat cepat dengan kisaran beberapa milidetik saja.
+
+dos:2c5d185689329d1cc871aced0306e50420231119145952.jpeg
+
+Cara kerja dari sebuah neuron terlihat sangat sederhana. Namun, neuron-neuron tersebut terorganisir dalam sebuah jaringan berisi miliaran neuron. Setiap neuron terhubung dengan beberapa ribu neuron lainnya. Dengan jumlah yang luar biasa besar tersebut, banyak pekerjaan kompleks yang dapat diselesaikan. 
+
+Nah, kita akan mempelajari neuron tersebut sebagai acuan untuk membuat sebuah jaringan saraf tiruan dalam komputer. Jaringan saraf tiruan ini memiliki komponen dasar bernama perceptron. Frank Rosenblatt dari Cornell Aeronautical Library adalah ilmuwan yang pertama kali menemukan perceptron pada tahun 1957 [8]. Perceptron pada jaringan saraf tiruan terinspirasi dari neuron pada jaringan saraf di otak manusia. Pada jaringan saraf tiruan, perceptron dan neuron merujuk pada hal yang sama. 
+
+Lantas bagaimana perceptron bekerja pada jaringan saraf tiruan? 
+
+Sebuah perceptron menerima masukan berupa bilangan numerik. Perceptron kemudian memproses masukan tersebut untuk menghasilkan sebuah keluaran. Agar lebih memahami cara kerja perceptron, kita akan menggunakan diagram di bawah.
+
+dos:8a76cc9502b00e4f3152a4b0a6f8ebda20231119145951.jpeg
+
+Berikut adalah proses yang menjelaskan bagaimana perceptron bekerja.
+
+Input menerima masukan berupa angka-angka. 
+Setiap input memiliki bobot masing-masing. Bobot adalah parameter yang akan dipelajari oleh sebuah perceptron dan menunjukkan kekuatan node tertentu. 
+Selanjutnya adalah tahap penjumlahan input. Pada tahap ini, setiap input akan dikalikan dengan bobotnya masing masing, lalu hasilnya akan ditambahkan dengan bias yang merupakan sebuah konstanta atau angka. Nilai bias memungkinkan Anda untuk mengubah kurva fungsi aktivasi ke atas atau ke bawah sehingga bisa lebih fleksibel dalam meminimalisasi eror. Penjelasan lebih lanjut tentang bias dapat Anda pelajari pada tautan berikut.
+Hasil penjumlahan pada tahap ini biasanya disebut weighted sum.
+
+Berikutnya, aplikasikan weighted sum pada fungsi aktivasi atau disebut juga Non-Linearity Function. Fungsi aktivasi digunakan untuk memetakan nilai yang dihasilkan menjadi nilai yang diperlukan, misalnya antara (0, 1) atau (-1, 1). Fungsi ini memungkinkan perceptron dapat menyesuaikan pola untuk data yang non linier. Penjelasan lebih lanjut tentang fungsi aktivasi akan diulas pada paragraf di bawah.
+Setelah semua langkah di atas terlewati, akhirnya kita memperoleh output berupa hasil perhitungan sebuah perceptron dalam bentuk bilangan numerik.
+Setelah mengetahui cara kerja perceptron, kita akan membahas tentang hidden layer. Sebuah hidden layer adalah dense layer yang berada di antara input layer dan output layer. Perhatikan ilustrasi berikut yang menunjukkan jaringan saraf di sebelah kiri memiliki 1 hidden layer, sedangkan jaringan saraf di sebelah kanan memiliki 4 buah hidden layer.
+
+dos:71776f64571dd7ca4913a82b26f0067a20231119145952.jpeg
+
+Dalam sebuah jaringan saraf tiruan, input layer dan output layer harus selalu ada, tetapi untuk hidden layer bisa ada beberapa atau tidak sama sekali. Hidden layer dan output layer sama-sama merupakan sebuah layer yang memiliki beberapa perceptron, sedangkan input layer adalah sebuah layer yang hanya menampung angka-angka.
+
+Hidden layer diberikan nama hidden karena sifatnya yang tersembunyi. Pada sebuah sistem jaringan saraf, input dan output layer merupakan lapisan yang dapat kita amati, sementara hidden layer, tidak.
+
+Pada sebuah jaringan saraf tiruan, semakin banyak jumlah hidden layer dalam sistem, semakin lama jaringan saraf tersebut memproduksi hasil, tetapi juga semakin kompleks masalah yang dapat diselesaikan.
+
+Selamat! Saat ini Anda telah mengetahui bahwa deep learning menggunakan konsep yang lebih kompleks untuk membangun sebuah AI. Pada modul selanjutnya, kita akan mempelajari beberapa contoh gambaran penerapan deep learning di industri. Sampai jumpa!
